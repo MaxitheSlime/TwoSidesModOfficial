@@ -1,0 +1,38 @@
+{
+  "parent": "twosidesmod:twosidesmod",
+  "criteria": {
+    "has_impure_rose_quartz": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "twosidesmod:impure_rose_quartz"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "text": "Smelt this new gem!"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "twosidesmod:rose_quartz_ore"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "The Age of Magic begins"
+    }
+  },
+  "requirements": [
+    [
+      "has_impure_rose_quartz"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

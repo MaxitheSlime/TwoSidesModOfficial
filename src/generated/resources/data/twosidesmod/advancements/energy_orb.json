@@ -1,0 +1,38 @@
+{
+  "parent": "twosidesmod:energy_seeds",
+  "criteria": {
+    "has_energy_orb": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "twosidesmod:energy_orb"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "text": "We could probably use this to power something"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "twosidesmod:energy_orb"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "It feels powerful..."
+    }
+  },
+  "requirements": [
+    [
+      "has_energy_orb"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

@@ -1,0 +1,38 @@
+{
+  "criteria": {
+    "has_lemon_seeds": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "twosidesmod:lemon_seeds"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "background": "twosidesmod:textures/item/lemon_seeds.png",
+    "description": {
+      "text": "What could these be?"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "twosidesmod:lemon_seeds"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "Farming"
+    }
+  },
+  "requirements": [
+    [
+      "has_lemon_seeds"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

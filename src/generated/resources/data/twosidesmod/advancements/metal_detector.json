@@ -1,0 +1,39 @@
+{
+  "parent": "twosidesmod:impure_rose_quartz",
+  "criteria": {
+    "has_metal_detector": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "twosidesmod:metal_detector"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "text": "I've been looking everywhere for you!"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "twosidesmod:metal_detector",
+      "nbt": "{Damage:0}"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "Where Ore You?"
+    }
+  },
+  "requirements": [
+    [
+      "has_metal_detector"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

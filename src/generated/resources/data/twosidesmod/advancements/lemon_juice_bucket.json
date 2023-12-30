@@ -1,0 +1,38 @@
+{
+  "parent": "twosidesmod:lemon",
+  "criteria": {
+    "has_lemon_juice_bucket": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "twosidesmod:lemon_juice_bucket"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "text": "Thirsty?"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "twosidesmod:lemon_juice_bucket"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "...make Lemonade!"
+    }
+  },
+  "requirements": [
+    [
+      "has_lemon_juice_bucket"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

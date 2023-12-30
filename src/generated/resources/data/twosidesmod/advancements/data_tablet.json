@@ -1,0 +1,38 @@
+{
+  "parent": "twosidesmod:metal_detector",
+  "criteria": {
+    "has_data_tablet": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "twosidesmod:data_tablet"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "text": "Batteries not included. But a SD card is!"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "twosidesmod:data_tablet"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "Location, Location, Location!"
+    }
+  },
+  "requirements": [
+    [
+      "has_data_tablet"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

@@ -1,0 +1,17 @@
+{
+  "structures": [
+    {
+      "structure": "twosidesmod:supply_hub",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 446981001,
+
+    "spacing": 50,
+
+    "separation": 40,
+
+    "type": "minecraft:random_spread"
+  }
+}

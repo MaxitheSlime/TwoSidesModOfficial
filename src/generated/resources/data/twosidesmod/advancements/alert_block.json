@@ -1,0 +1,38 @@
+{
+  "parent": "twosidesmod:pure_rose_quartz_block",
+  "criteria": {
+    "has_alert_block": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "twosidesmod:sound_block"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "text": "Creates a new Villager job"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "twosidesmod:sound_block"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "WEE WOO WEE WOO!"
+    }
+  },
+  "requirements": [
+    [
+      "has_alert_block"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

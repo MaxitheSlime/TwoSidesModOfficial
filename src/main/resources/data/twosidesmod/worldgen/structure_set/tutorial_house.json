@@ -1,0 +1,17 @@
+{
+  "structures": [
+    {
+      "structure": "twosidesmod:tutorial_house",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 750545120,
+
+    "spacing": 40,
+
+    "separation": 15,
+
+    "type": "minecraft:random_spread"
+  }
+}

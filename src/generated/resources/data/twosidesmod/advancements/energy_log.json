@@ -1,0 +1,38 @@
+{
+  "parent": "twosidesmod:rose_quartz_tools",
+  "criteria": {
+    "has_energy_log": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "twosidesmod:energy_log"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "text": "Normal tools can't cut these trees."
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "twosidesmod:energy_log"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "That is a very vibrant Green"
+    }
+  },
+  "requirements": [
+    [
+      "has_energy_log"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

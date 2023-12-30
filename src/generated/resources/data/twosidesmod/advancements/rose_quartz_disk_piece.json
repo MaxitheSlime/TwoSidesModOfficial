@@ -1,0 +1,38 @@
+{
+  "parent": "twosidesmod:alert_block",
+  "criteria": {
+    "has_rose_quartz_disk_piece": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "twosidesmod:rose_quartz_disk_piece"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "text": "They cam come from a few places..."
+    },
+    "frame": "task",
+    "hidden": true,
+    "icon": {
+      "item": "twosidesmod:rose_quartz_disk_piece"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "You found a Disk Piece!"
+    }
+  },
+  "requirements": [
+    [
+      "has_rose_quartz_disk_piece"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

@@ -1,0 +1,17 @@
+{
+  "values": [
+    "twosidesmod:pure_rose_quartz_block",
+    "twosidesmod:impure_rose_quartz_block",
+    "twosidesmod:rose_quartz_ore",
+    "twosidesmod:rose_quartz_stairs",
+    "twosidesmod:rose_quartz_slab",
+    "twosidesmod:rose_quartz_pressure_plate",
+    "twosidesmod:rose_quartz_button",
+    "twosidesmod:rose_quartz_fence_gate",
+    "twosidesmod:rose_quartz_fence",
+    "twosidesmod:rose_quartz_wall",
+    "twosidesmod:rose_quartz_door",
+    "twosidesmod:rose_quartz_trapdoor",
+    "twosidesmod:sound_block"
+  ]
+}

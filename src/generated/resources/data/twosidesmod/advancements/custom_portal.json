@@ -1,0 +1,38 @@
+{
+  "parent": "twosidesmod:biome_plants",
+  "criteria": {
+    "has_maxi_portal": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "twosidesmod:maxi_portal"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "text": "It's a whole new dimension!"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "twosidesmod:maxi_portal"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "It's not the rapture!"
+    }
+  },
+  "requirements": [
+    [
+      "has_maxi_portal"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

@@ -1,0 +1,38 @@
+{
+  "parent": "twosidesmod:rngesus",
+  "criteria": {
+    "has_rqg_spawn_egg": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "twosidesmod:rqg_spawn_egg"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "text": "Wonder if these remotes are good for anything..."
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "twosidesmod:rqg_spawn_egg"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "Aren't these creative only?"
+    }
+  },
+  "requirements": [
+    [
+      "has_rqg_spawn_egg"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

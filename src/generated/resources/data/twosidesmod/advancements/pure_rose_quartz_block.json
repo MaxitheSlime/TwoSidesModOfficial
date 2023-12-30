@@ -1,0 +1,38 @@
+{
+  "parent": "twosidesmod:twosidesmod",
+  "criteria": {
+    "has_pure_rose_quartz_block": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "twosidesmod:pure_rose_quartz_block"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "text": "How many did you mine?"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "twosidesmod:pure_rose_quartz_block"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "What a Load of Gems!"
+    }
+  },
+  "requirements": [
+    [
+      "has_pure_rose_quartz_block"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

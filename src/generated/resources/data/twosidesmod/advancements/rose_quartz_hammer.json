@@ -1,0 +1,39 @@
+{
+  "parent": "twosidesmod:rose_quartz_paxel",
+  "criteria": {
+    "has_rose_quartz_hammer": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "twosidesmod:rose_quartz_hammer"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "text": "It has to be useful for something..."
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "twosidesmod:rose_quartz_hammer",
+      "nbt": "{Damage:0}"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "There's a Hammer too?!"
+    }
+  },
+  "requirements": [
+    [
+      "has_rose_quartz_hammer"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

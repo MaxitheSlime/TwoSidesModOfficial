@@ -1,0 +1,39 @@
+{
+  "criteria": {
+    "has_iron_pickaxe": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:iron_pickaxe"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "background": "twosidesmod:textures/block/rose_quartz_ore.png",
+    "description": {
+      "text": "Magic at Your Fingertips!"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "minecraft:iron_pickaxe",
+      "nbt": "{Damage:0}"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "2 Sides Mod"
+    }
+  },
+  "requirements": [
+    [
+      "has_iron_pickaxe"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

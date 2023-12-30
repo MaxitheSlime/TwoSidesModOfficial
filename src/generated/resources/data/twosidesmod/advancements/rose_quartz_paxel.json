@@ -1,0 +1,39 @@
+{
+  "parent": "twosidesmod:rose_quartz_tools",
+  "criteria": {
+    "has_rose_quartz_paxel": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "twosidesmod:rose_quartz_paxel"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "text": "It's some sort of... multi-tool?"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "twosidesmod:rose_quartz_paxel",
+      "nbt": "{Damage:0}"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "What the heck is this?"
+    }
+  },
+  "requirements": [
+    [
+      "has_rose_quartz_paxel"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

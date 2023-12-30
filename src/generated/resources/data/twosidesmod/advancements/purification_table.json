@@ -1,0 +1,38 @@
+{
+  "parent": "twosidesmod:purification_supplies",
+  "criteria": {
+    "has_purification_table": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "twosidesmod:purification_table"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "text": "A little bit of acidity, a little electrcity, and shaboom!"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "twosidesmod:purification_table"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "Time to Purify!"
+    }
+  },
+  "requirements": [
+    [
+      "has_purification_table"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

@@ -1,0 +1,38 @@
+{
+  "parent": "twosidesmod:rose_quartz_armor",
+  "criteria": {
+    "has_rose_quartz_horse_armor": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "twosidesmod:rose_quartz_horse_armor"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "text": "You're seriosuly devoted, aren't you?"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "twosidesmod:rose_quartz_horse_armor"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "Bling Bling"
+    }
+  },
+  "requirements": [
+    [
+      "has_rose_quartz_horse_armor"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

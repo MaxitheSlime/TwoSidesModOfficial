@@ -1,0 +1,38 @@
+{
+  "parent": "twosidesmod:impure_rose_quartz",
+  "criteria": {
+    "has_fire_quartz": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "twosidesmod:fire_quartz"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "text": "It gives off such pretty yellows and greens"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "twosidesmod:fire_quartz"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "Better than coal!"
+    }
+  },
+  "requirements": [
+    [
+      "has_fire_quartz"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

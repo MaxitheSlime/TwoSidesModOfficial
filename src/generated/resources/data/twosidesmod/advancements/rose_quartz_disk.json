@@ -1,0 +1,38 @@
+{
+  "parent": "twosidesmod:rose_quartz_disk_piece",
+  "criteria": {
+    "has_rose_quartz_disk": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "twosidesmod:bar_brawl_record"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "text": "Time to listen to some tunes!"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "twosidesmod:bar_brawl_record"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "Together they make a disk!"
+    }
+  },
+  "requirements": [
+    [
+      "has_rose_quartz_disk"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

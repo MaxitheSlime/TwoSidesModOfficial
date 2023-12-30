@@ -1,0 +1,38 @@
+{
+  "parent": "twosidesmod:rngesus",
+  "criteria": {
+    "has_rose_quartz_lightbulb": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "twosidesmod:rose_quartz_lightbulb"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "text": "It's a whole new dimension!"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "twosidesmod:maxi_portal"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "A lightbulb? For what?"
+    }
+  },
+  "requirements": [
+    [
+      "has_rose_quartz_lightbulb"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

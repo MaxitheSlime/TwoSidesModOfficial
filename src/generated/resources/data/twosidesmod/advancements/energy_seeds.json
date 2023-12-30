@@ -1,0 +1,38 @@
+{
+  "parent": "twosidesmod:lemon_farming",
+  "criteria": {
+    "has_energy_seeds": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "twosidesmod:energy_seeds"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "text": "Farming energy is now possible!"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "twosidesmod:energy_seeds"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "Radioactive Crops"
+    }
+  },
+  "requirements": [
+    [
+      "has_energy_seeds"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

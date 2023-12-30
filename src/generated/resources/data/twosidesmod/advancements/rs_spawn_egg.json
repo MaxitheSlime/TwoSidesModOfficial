@@ -1,0 +1,38 @@
+{
+  "parent": "twosidesmod:rngesus",
+  "criteria": {
+    "has_rs_spawn_egg": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "twosidesmod:rs_spawn_egg"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "text": "This gives me goosebumps."
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "twosidesmod:rs_spawn_egg"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "Why do I hear Boss Music?"
+    }
+  },
+  "requirements": [
+    [
+      "has_rs_spawn_egg"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

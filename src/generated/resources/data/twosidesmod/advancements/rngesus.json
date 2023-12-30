@@ -1,0 +1,38 @@
+{
+  "criteria": {
+    "has_dice": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "twosidesmod:dice"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "background": "twosidesmod:textures/item/dice.png",
+    "description": {
+      "text": "Let's start with the basics. Mobs."
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "twosidesmod:dice"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "RNG-esus"
+    }
+  },
+  "requirements": [
+    [
+      "has_dice"
+    ]
+  ],
+  "sends_telemetry_event": true
+}
