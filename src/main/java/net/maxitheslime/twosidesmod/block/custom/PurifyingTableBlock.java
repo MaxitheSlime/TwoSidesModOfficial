@@ -26,16 +26,12 @@ import org.jetbrains.annotations.Nullable;
 
 public class PurifyingTableBlock extends BaseEntityBlock {
     public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
+
     public PurifyingTableBlock(Properties pProperties) {
         super(pProperties);
     }
 
-    public static final VoxelShape SHAPE = Block.box(0, 0, 0, 16, 10, 16);
-
-    @Override
-    public VoxelShape getShape(BlockState pState, BlockGetter pLevel, BlockPos pPos, CollisionContext pContext) {
-        return SHAPE;
-    }
+    public static final VoxelShape SHAPE = Block.box(0, 0, 0, 16, 12, 16);
 
     public BlockState rotate(BlockState pState, Rotation pRot) {
         return pState.setValue(FACING, pRot.rotate(pState.getValue(FACING)));
@@ -43,6 +39,10 @@ public class PurifyingTableBlock extends BaseEntityBlock {
 
     public BlockState mirror(BlockState pState, Mirror pMirror) {
         return pState.rotate(pMirror.getRotation(pState.getValue(FACING)));
+    }
+    @Override
+    public VoxelShape getShape(BlockState pState, BlockGetter pLevel, BlockPos pPos, CollisionContext pContext) {
+        return SHAPE;
     }
 
     @Nullable
@@ -55,6 +55,8 @@ public class PurifyingTableBlock extends BaseEntityBlock {
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> pBuilder) {
         pBuilder.add(FACING);
     }
+
+    /* BLOCK ENTITY */
 
     @Override
     public RenderShape getRenderShape(BlockState pState) {

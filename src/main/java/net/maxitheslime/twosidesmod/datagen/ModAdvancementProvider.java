@@ -41,7 +41,7 @@ public class ModAdvancementProvider implements ForgeAdvancementProvider.Advancem
                 .addCriterion("has_impure_rose_quartz", new Criterion(InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.IMPURE_ROSE_QUARTZ.get())))
                 .save(saver, new ResourceLocation(TwoSidesMod.MOD_ID, "impure_rose_quartz"), existingFileHelper);
 
-        //Mined magic ores
+        /*//Mined magic ores
         Advancement magicGet = Advancement.Builder.advancement()
                 .display(new DisplayInfo(new ItemStack(ModBlocks.STRENGTH_ORE.get()),
                         Component.literal("Further Magic"), Component.literal("We should smelt these too."),
@@ -56,7 +56,7 @@ public class ModAdvancementProvider implements ForgeAdvancementProvider.Advancem
                 .addCriterion("has_impure_life", new Criterion(InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.IMPURE_CRYSTAL_LIFE_SHARD.get())))
                 .addCriterion("has_impure_soul", new Criterion(InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.IMPURE_CRYSTAL_SOUL_SHARD.get())))
                 .save(saver, new ResourceLocation(TwoSidesMod.MOD_ID, "impure_magic"), existingFileHelper);
-
+        */
         //got supplies for the Purification Table
         Advancement purificationSupplies = Advancement.Builder.advancement()
                 .display(new DisplayInfo(new ItemStack(Items.WRITABLE_BOOK),

@@ -28,8 +28,7 @@ public class PurificationRecipeProvider implements RecipeBuilder {
     private final FluidStack fluidStack;
     private final Advancement.Builder advancement = Advancement.Builder.advancement();
 
-    public PurificationRecipeProvider(ItemLike ingredient, ItemLike result, int count,
-                                      int craftTime, int energyAmount, FluidStack fluidStack) {
+    public PurificationRecipeProvider(ItemLike ingredient, ItemLike result, int count, int craftTime, int energyAmount, FluidStack fluidStack) {
         this.ingredient = Ingredient.of(ingredient);
         this.result = result.asItem();
         this.count = count;
@@ -58,13 +57,11 @@ public class PurificationRecipeProvider implements RecipeBuilder {
     public void save(Consumer<FinishedRecipe> pFinishedRecipeConsumer, ResourceLocation pRecipeId) {
         this.advancement.parent(new ResourceLocation("recipes/root"))
                 .addCriterion("has_the_recipe", RecipeUnlockedTrigger.unlocked(pRecipeId))
-                .rewards(AdvancementRewards.Builder.recipe(pRecipeId))
-                .requirements(RequirementsStrategy.OR); //LOOK AT ME
+                .rewards(AdvancementRewards.Builder.recipe(pRecipeId)).requirements(RequirementsStrategy.OR);
 
         pFinishedRecipeConsumer.accept(new Result(pRecipeId, this.result, this.count, this.ingredient,
                 this.advancement, new ResourceLocation(pRecipeId.getNamespace(), "recipes/"
                 + pRecipeId.getPath()), this.craftTime, this.energyAmount, this.fluidStack));
-
     }
 
     public static class Result implements FinishedRecipe {
@@ -99,17 +96,14 @@ public class PurificationRecipeProvider implements RecipeBuilder {
             pJson.add("ingredients", jsonarray);
             JsonObject jsonobject = new JsonObject();
             jsonobject.addProperty("item", ForgeRegistries.ITEMS.getKey(this.result).toString());
-
             pJson.addProperty("fluidType", ForgeRegistries.FLUIDS.getKey(this.fluidStack.getFluid()).toString());
             pJson.addProperty("fluidAmount", this.fluidStack.getAmount());
-
             if (this.count > 1) {
                 jsonobject.addProperty("count", this.count);
             }
 
             pJson.addProperty("craftTime", this.craftTime);
             pJson.addProperty("energyAmount", this.energyAmount);
-
             pJson.add("output", jsonobject);
         }
 
@@ -124,14 +118,12 @@ public class PurificationRecipeProvider implements RecipeBuilder {
             return PurificationRecipe.Serializer.INSTANCE;
         }
 
-        @org.jetbrains.annotations.Nullable
-        @Override
+        @javax.annotation.Nullable
         public JsonObject serializeAdvancement() {
-                return this.advancement.serializeToJson();
+            return this.advancement.serializeToJson();
         }
 
-        @org.jetbrains.annotations.Nullable
-        @Override
+        @javax.annotation.Nullable
         public ResourceLocation getAdvancementId() {
             return this.advancementId;
         }

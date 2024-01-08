@@ -10,7 +10,7 @@ public class ModSurfaceRules {
     private static final SurfaceRules.RuleSource DIRT = makeStateRule(Blocks.DIRT);
     private static final SurfaceRules.RuleSource GRASS_BLOCK = makeStateRule(Blocks.GRASS_BLOCK);
     private static final SurfaceRules.RuleSource END_STONE = makeStateRule(Blocks.END_STONE);
-    private static final SurfaceRules.RuleSource INFLUENCE = makeStateRule(ModBlocks.IMPURE_INFLUENCE_BLOCK.get());
+    private static final SurfaceRules.RuleSource INFLUENCE = makeStateRule(ModBlocks.ROSE_QUARTZ_BLOCK.get());//IMPURE_INFLUENCE_BLOCK.get());
 
     public static SurfaceRules.RuleSource makeRules() {
         SurfaceRules.ConditionSource isAtOrAboveWaterLevel = SurfaceRules.waterBlockCheck(-1, 0);

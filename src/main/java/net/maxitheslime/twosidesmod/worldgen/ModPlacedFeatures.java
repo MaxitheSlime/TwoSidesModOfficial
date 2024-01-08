@@ -82,7 +82,7 @@ public class ModPlacedFeatures {
                         HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(6), VerticalAnchor.absolute(50)),
                         BiomeFilter.biome()));
 
-        register(context, STRENGTH_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_STRENGTH_ORE_KEY),
+        /*register(context, STRENGTH_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_STRENGTH_ORE_KEY),
                 ModOrePlacement.commonOrePlacement(12,
                         HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
         register(context, NETHER_STRENGTH_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.NETHER_STRENGTH_ORE_KEY),
@@ -172,13 +172,7 @@ public class ModPlacedFeatures {
         register(context, SOUL_GEODE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.SOUL_GEODE_KEY),
                 List.of(RarityFilter.onAverageOnceEvery(37), InSquarePlacement.spread(),
                         HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(6), VerticalAnchor.absolute(50)),
-                        BiomeFilter.biome()));
-
-
-
-
-
-
+                        BiomeFilter.biome()));*/
 
     }
 

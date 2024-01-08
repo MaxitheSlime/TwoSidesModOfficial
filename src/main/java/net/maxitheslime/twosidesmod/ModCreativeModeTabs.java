@@ -24,7 +24,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.ROSE_QUARTZ_DISK_PIECE.get());
                         pOutput.accept(ModItems.BAR_BRAWL_RECORD.get());
                         pOutput.accept(ModItems.ROSE_QUARTZ_LIGHTBULB.get());
-                        pOutput.accept(ModItems.CRYSTAL_STRENGTH_SHARD.get());
+                        /*pOutput.accept(ModItems.CRYSTAL_STRENGTH_SHARD.get());
                         pOutput.accept(ModItems.IMPURE_CRYSTAL_STRENGTH_SHARD.get());
                         pOutput.accept(ModItems.CRYSTAL_INFLUENCE_SHARD.get());
                         pOutput.accept(ModItems.IMPURE_CRYSTAL_INFLUENCE_SHARD.get());
@@ -37,7 +37,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.CRYSTAL_LIFE_SHARD.get());
                         pOutput.accept(ModItems.IMPURE_CRYSTAL_LIFE_SHARD.get());
                         pOutput.accept(ModItems.CRYSTAL_SOUL_SHARD.get());
-                        pOutput.accept(ModItems.IMPURE_CRYSTAL_SOUL_SHARD.get());
+                        pOutput.accept(ModItems.IMPURE_CRYSTAL_SOUL_SHARD.get());*/
                     }).build());
     public static final RegistryObject<CreativeModeTab> TWO_SIDES_TOOLS = CREATIVE_MODE_TABS.register("two_sides_tools",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.METAL_DETECTOR.get())).
@@ -61,7 +61,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.ROSE_QUARTZ_SHIELD.get());
                         pOutput.accept(ModItems.ROSE_QUARTZ_HORSE_ARMOR.get());
 
-                        pOutput.accept(ModItems.SOUL_SWORD.get());
+                        /*pOutput.accept(ModItems.SOUL_SWORD.get());
                         pOutput.accept(ModItems.SOUL_PICKAXE.get());
                         pOutput.accept(ModItems.SOUL_SHOVEL.get());
                         pOutput.accept(ModItems.SOUL_AXE.get());
@@ -74,7 +74,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.SOUL_LEGGINGS.get());
                         pOutput.accept(ModItems.SOUL_BOOTS.get());
                         pOutput.accept(ModItems.SOUL_SHIELD.get());
-                        pOutput.accept(ModItems.SOUL_HORSE_ARMOR.get());
+                        pOutput.accept(ModItems.SOUL_HORSE_ARMOR.get());*/
 
                         pOutput.accept(ModItems.REMOTE_CONTROL.get());
 
@@ -150,7 +150,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.WAXED_RUBY_BLOCK_1.get());
                         pOutput.accept(ModBlocks.WAXED_RUBY_BLOCK_2.get());
                         pOutput.accept(ModBlocks.WAXED_RUBY_BLOCK_3.get());
-                        pOutput.accept(ModBlocks.STRENGTH_BLOCK.get());
+                        /*pOutput.accept(ModBlocks.STRENGTH_BLOCK.get());
                         pOutput.accept(ModBlocks.IMPURE_STRENGTH_BLOCK.get());
                         pOutput.accept(ModBlocks.STRENGTH_ORE.get());
                         pOutput.accept(ModBlocks.DEEPSLATE_STRENGTH_ORE.get());
@@ -191,7 +191,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.SOUL_ORE.get());
                         pOutput.accept(ModBlocks.DEEPSLATE_SOUL_ORE.get());
                         pOutput.accept(ModBlocks.END_SOUL_ORE.get());
-                        pOutput.accept(ModBlocks.NETHER_SOUL_ORE.get());
+                        pOutput.accept(ModBlocks.NETHER_SOUL_ORE.get());*/
                     }).build());
 
     public static final RegistryObject<CreativeModeTab> TWO_SIDES_NATURE_BLOCKS = CREATIVE_MODE_TABS.register("two_sides_nature_blocks",

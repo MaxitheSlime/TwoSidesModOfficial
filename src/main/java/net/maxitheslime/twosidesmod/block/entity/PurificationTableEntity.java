@@ -28,6 +28,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.material.Fluids;
 import net.minecraftforge.common.capabilities.Capability;
 import net.minecraftforge.common.capabilities.ForgeCapabilities;
 import net.minecraftforge.common.util.LazyOptional;
@@ -44,14 +45,10 @@ import java.util.Map;
 import java.util.Optional;
 
 public class PurificationTableEntity extends BlockEntity implements MenuProvider {
-
     private final ItemStackHandler itemHandler = new ItemStackHandler(4) {
         @Override
         protected void onContentsChanged(int slot) {
             setChanged();
-            if(!level.isClientSide()) {
-                level.sendBlockUpdated(getBlockPos(), getBlockState(), getBlockState(), 3);
-            }
         }
 
         @Override
@@ -72,6 +69,7 @@ public class PurificationTableEntity extends BlockEntity implements MenuProvider
     private static final int ENERGY_ITEM_SLOT = 3;
 
     private LazyOptional<IItemHandler> lazyItemHandler = LazyOptional.empty();
+    private LazyOptional<IFluidHandler> lazyFluidHandler = LazyOptional.empty();
     private final Map<Direction, LazyOptional<WrappedHandler>> directionWrappedHandlerMap =
             new InventoryDirectionWrapper(itemHandler,
                     new InventoryDirectionEntry(Direction.DOWN, OUTPUT_SLOT, false),
@@ -82,11 +80,11 @@ public class PurificationTableEntity extends BlockEntity implements MenuProvider
                     new InventoryDirectionEntry(Direction.UP, INPUT_SLOT, true)).directionsMap;
 
     private LazyOptional<IEnergyStorage> lazyEnergyHandler = LazyOptional.empty();
-    private LazyOptional<IFluidHandler> lazyFluidHandler = LazyOptional.empty();
 
     protected final ContainerData data;
     private int progress = 0;
     private int maxProgress = 78;
+
     private final int DEFAULT_MAX_PROGRESS = 78;
 
     private int energyAmount = 0;
@@ -164,7 +162,6 @@ public class PurificationTableEntity extends BlockEntity implements MenuProvider
     public IEnergyStorage getEnergyStorage() {
         return this.ENERGY_STORAGE;
     }
-
     public FluidStack getFluid() {
         return FLUID_TANK.getFluid();
     }
@@ -177,7 +174,6 @@ public class PurificationTableEntity extends BlockEntity implements MenuProvider
 
         Containers.dropContents(this.level, this.worldPosition, inventory);
     }
-
 
     @Override
     public Component getDisplayName() {
@@ -196,13 +192,13 @@ public class PurificationTableEntity extends BlockEntity implements MenuProvider
             return lazyEnergyHandler.cast();
         }
 
-        if(cap == ForgeCapabilities.FLUID_HANDLER) {
-            return lazyFluidHandler.cast();
-        }
-
         if(cap == ForgeCapabilities.ITEM_HANDLER) {
             if(side == null) {
                 return lazyItemHandler.cast();
+            }
+
+            if(cap == ForgeCapabilities.FLUID_HANDLER) {
+                return lazyFluidHandler.cast();
             }
 
             if(directionWrappedHandlerMap.containsKey(side)) {
@@ -243,13 +239,14 @@ public class PurificationTableEntity extends BlockEntity implements MenuProvider
     @Override
     protected void saveAdditional(CompoundTag pTag) {
         pTag.put("inventory", itemHandler.serializeNBT());
-        pTag.putInt("purification_table.progress", progress);
-        pTag.putInt("purification_table.max_progress", maxProgress);
-        pTag.putInt("purification_table.energy_amount", energyAmount);
+        pTag.putInt("purification_station.progress", progress);
+        pTag.putInt("purification_station.max_progress", maxProgress);
+        pTag.putInt("purification_station.energy_amount", energyAmount);
         neededFluidStack.writeToNBT(pTag);
-
+        
         pTag.putInt("energy", ENERGY_STORAGE.getEnergyStored());
         pTag = FLUID_TANK.writeToNBT(pTag);
+        
 
         super.saveAdditional(pTag);
     }
@@ -258,12 +255,13 @@ public class PurificationTableEntity extends BlockEntity implements MenuProvider
     public void load(CompoundTag pTag) {
         super.load(pTag);
         itemHandler.deserializeNBT(pTag.getCompound("inventory"));
-        progress = pTag.getInt("purification_table.progress");
-        maxProgress = pTag.getInt("purification_table.max_progress");
-        energyAmount = pTag.getInt("purification_table.energy_amount");
+        progress = pTag.getInt("purification_station.progress");
+        maxProgress = pTag.getInt("purification_station.max_progress");
+        energyAmount = pTag.getInt("purification_station.energy_amount");
         neededFluidStack = FluidStack.loadFluidStackFromNBT(pTag);
         ENERGY_STORAGE.setEnergy(pTag.getInt("energy"));
         FLUID_TANK.readFromNBT(pTag);
+
 
     }
 

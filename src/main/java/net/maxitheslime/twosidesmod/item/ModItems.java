@@ -110,7 +110,7 @@ public class ModItems {
     public static final RegistryObject<Item> ENERGY_SEEDS = ITEMS.register("energy_seeds",
             () -> new ItemNameBlockItem(ModBlocks.ENERGY_CROP.get(), new Item.Properties()));
 
-    public static final RegistryObject<Item> CRYSTAL_STRENGTH_SHARD = ITEMS.register("crystal_strength_shard",
+    /*public static final RegistryObject<Item> CRYSTAL_STRENGTH_SHARD = ITEMS.register("crystal_strength_shard",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> IMPURE_CRYSTAL_STRENGTH_SHARD = ITEMS.register("impure_crystal_strength_shard",
             () -> new Item(new Item.Properties()));
@@ -167,7 +167,7 @@ public class ModItems {
 
     public static final RegistryObject<Item> SOUL_HORSE_ARMOR = ITEMS.register("soul_horse_armor",
             () -> new HorseArmorItem(12, new ResourceLocation(TwoSidesMod.MOD_ID, "textures/entity/horse/armor/horse_armor_soul.png"),
-                    new Item.Properties()));
+                    new Item.Properties()));*/
     
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

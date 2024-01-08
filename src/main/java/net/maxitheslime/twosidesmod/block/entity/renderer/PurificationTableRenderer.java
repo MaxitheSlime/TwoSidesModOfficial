@@ -29,10 +29,10 @@ public class PurificationTableRenderer implements BlockEntityRenderer<Purificati
         ItemStack itemStack = pBlockEntity.getRenderStack();
 
         pPoseStack.pushPose();
-        pPoseStack.translate(0.5f, 0.86f, 0.5f);
+        pPoseStack.translate(0.5f, 0.75f, 0.5f);
         pPoseStack.scale(0.35f, 0.35f, 0.35f);
         pPoseStack.mulPose(Axis.YN.rotationDegrees(pBlockEntity.getBlockState().getValue(PurifyingTableBlock.FACING).toYRot()));
-        pPoseStack.mulPose(Axis.XP.rotationDegrees(0));
+        pPoseStack.mulPose(Axis.XP.rotationDegrees(270));
 
         itemRenderer.renderStatic(itemStack, ItemDisplayContext.FIXED, getLightLevel(pBlockEntity.getLevel(),
                 pBlockEntity.getBlockPos()), OverlayTexture.NO_OVERLAY, pPoseStack, pBufferSource, pBlockEntity.getLevel(), 1);

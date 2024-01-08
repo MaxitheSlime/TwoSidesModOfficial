@@ -9,7 +9,7 @@ import net.minecraft.world.item.AxeItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Tier;
 
-public class SHAxeItem extends AxeItem {
+public class SHAxeItem {}/*extends AxeItem {
     public SHAxeItem(Tier pTier, int pAttackDamageModifier, float pAttackSpeedModifier, Properties pProperties) {
         super(pTier, pAttackDamageModifier, pAttackSpeedModifier, pProperties);
     }
@@ -22,4 +22,4 @@ public class SHAxeItem extends AxeItem {
 
         return super.onLeftClickEntity(stack, player, entity);
     }
-}
+}*/

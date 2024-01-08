@@ -9,7 +9,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.ShovelItem;
 import net.minecraft.world.item.Tier;
 
-public class SHShovelItem extends ShovelItem {
+public class SHShovelItem{} /*extends ShovelItem {
     public SHShovelItem(Tier pTier, int pAttackDamageModifier, float pAttackSpeedModifier, Properties pProperties) {
         super(pTier, pAttackDamageModifier, pAttackSpeedModifier, pProperties);
     }
@@ -22,4 +22,4 @@ public class SHShovelItem extends ShovelItem {
 
         return super.onLeftClickEntity(stack, player, entity);
     }
-}
+}*/

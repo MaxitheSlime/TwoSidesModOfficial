@@ -8,7 +8,7 @@ import net.minecraft.world.entity.LivingEntity;
 
 // Climbing Effect by SameDifferent: https://github.com/samedifferent/TrickOrTreat/blob/master/LICENSE
 // Distributed under MIT
-public class SoulHarrowEffect extends MobEffect {
+public class SoulHarrowEffect /*extends MobEffect*/ {/*
     public SoulHarrowEffect(MobEffectCategory pCategory, int pColor) {
         super(pCategory, pColor);
     }
@@ -25,5 +25,5 @@ public class SoulHarrowEffect extends MobEffect {
     @Override
     public boolean isDurationEffectTick(int pDuration, int pAmplifier) {
         return true;
-    }
+    }*/
 }

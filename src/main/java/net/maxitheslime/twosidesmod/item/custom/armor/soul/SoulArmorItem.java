@@ -35,8 +35,9 @@ import java.util.Map;
 import java.util.Set;
 import java.util.function.Consumer;
 
-public class SoulArmorItem extends ArmorItem implements GeoItem {
-    private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
+public class SoulArmorItem //extends ArmorItem implements GeoItem
+{
+    /*private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
 
     private static final Map<ArmorMaterial, MobEffectInstance> SOUL_ARMOR_EFFECT1 =
             (new ImmutableMap.Builder<ArmorMaterial, MobEffectInstance>())
@@ -93,8 +94,8 @@ public class SoulArmorItem extends ArmorItem implements GeoItem {
 
             for (ItemStack stack : entity.getArmorSlots()) {
                 // We can stop immediately if any of the slots are empty
-                /*if (stack.isEmpty())
-                    return PlayState.STOP;*/
+                //if (stack.isEmpty())
+                //  return PlayState.STOP;
 
                 wornArmor.add(stack.getItem());
             }
@@ -173,5 +174,5 @@ public class SoulArmorItem extends ArmorItem implements GeoItem {
             player.addEffect(new MobEffectInstance(mapEffect.getEffect(),
                     mapEffect.getDuration(), mapEffect.getAmplifier()));
         }
-    }
+    }*/
 }

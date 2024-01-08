@@ -15,6 +15,8 @@ import net.minecraft.world.level.Level;
 import net.minecraftforge.fluids.FluidStack;
 import net.minecraftforge.registries.ForgeRegistries;
 
+import java.util.Objects;
+
 public class PurificationRecipe implements Recipe<SimpleContainer> {
     private final NonNullList<Ingredient> inputItems;
     private final ItemStack output;
@@ -24,7 +26,7 @@ public class PurificationRecipe implements Recipe<SimpleContainer> {
     private final FluidStack fluidStack;
 
     public PurificationRecipe(ResourceLocation id, ItemStack output, NonNullList<Ingredient> inputItems,
-                              int craftTime, int energyAmount, FluidStack fluidStack) {
+                               int craftTime, int energyAmount, FluidStack fluidStack) {
         this.inputItems = inputItems;
         this.output = output;
         this.id = id;
@@ -69,6 +71,7 @@ public class PurificationRecipe implements Recipe<SimpleContainer> {
     public int getEnergyAmount() {
         return energyAmount;
     }
+
     public FluidStack getFluidStack() {
         return fluidStack;
     }
@@ -102,8 +105,7 @@ public class PurificationRecipe implements Recipe<SimpleContainer> {
         @Override
         public PurificationRecipe fromJson(ResourceLocation id, JsonObject json) {
             ItemStack output = ShapedRecipe.itemStackFromJson(GsonHelper.getAsJsonObject(json, "output"));
-            FluidStack fluidStack = new FluidStack(ForgeRegistries.FLUIDS.getValue(new
-                    ResourceLocation(json.get("fluidType").getAsString())),
+            FluidStack fluidStack = new FluidStack((ForgeRegistries.FLUIDS.getValue(new ResourceLocation(json.get("fluidType").getAsString()))),
                     json.get("fluidAmount").getAsInt());
 
             JsonArray ingredients = GsonHelper.getAsJsonArray(json, "ingredients");
