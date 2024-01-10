@@ -88,7 +88,7 @@ public class ModAdvancementProvider implements ForgeAdvancementProvider.Advancem
         //Crafted the Mod Furnace
         Advancement superFurnace = Advancement.Builder.advancement()
                 .display(new DisplayInfo(new ItemStack(ModBlocks.CONDUCTIVE_FURNACE.get()),
-                        Component.literal("Quick and Simple"), Component.literal("It may not do much, but it sure is fast!"),
+                        Component.literal("Electrifying"), Component.literal("Ionize items into gems!"),
                         null, FrameType.TASK,
                         true, true, false))
                 .parent(fireQuartz)

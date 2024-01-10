@@ -29,7 +29,7 @@
   "display": {
     "announce_to_chat": true,
     "description": {
-      "text": "It may not do much, but it sure is fast!"
+      "text": "Ionize items into gems!"
     },
     "frame": "task",
     "hidden": false,
@@ -38,7 +38,7 @@
     },
     "show_toast": true,
     "title": {
-      "text": "Quick and Simple"
+      "text": "Electrifying"
     }
   },
   "requirements": [
