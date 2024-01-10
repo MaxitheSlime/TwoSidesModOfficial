@@ -1,0 +1,13 @@
+{
+  "type": "twosidesmod:conductive_furnace",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 1.0,
+  "ingredient": {
+    "item": "twosidesmod:impure_crystal_soul_shard"
+  },
+  "result": {
+    "count": 3,
+    "item": "twosidesmod:crystal_soul_shard"
+  }
+}

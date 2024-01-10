@@ -1,10 +1,13 @@
 {
   "type": "twosidesmod:conductive_furnace",
   "category": "misc",
-  "cookingtime": 50,
-  "experience": 0.5,
+  "cookingtime": 120,
+  "experience": 2.0,
   "ingredient": {
     "item": "minecraft:coal"
   },
-  "result": "minecraft:diamond"
+  "result": {
+    "count": 7,
+    "item": "minecraft:diamond"
+  }
 }

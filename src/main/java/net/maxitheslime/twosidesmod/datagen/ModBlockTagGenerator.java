@@ -25,7 +25,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.ROSE_QUARTZ_ORE.get()).add(ModBlocks.DEEPSLATE_ROSE_QUARTZ_ORE.get())
                 .add(ModBlocks.END_ROSE_QUARTZ_ORE.get()).add(ModBlocks.NETHER_ROSE_QUARTZ_ORE.get())
                 .add(ModBlocks.IMPURE_ROSE_QUARTZ_BLOCK.get()).add(ModBlocks.ROSE_QUARTZ_BLOCK.get())
-                /*.add(ModBlocks.STRENGTH_BLOCK.get()).add(ModBlocks.IMPURE_STRENGTH_BLOCK.get())
+                .add(ModBlocks.STRENGTH_BLOCK.get()).add(ModBlocks.IMPURE_STRENGTH_BLOCK.get())
                 .add(ModBlocks.STRENGTH_ORE.get()).add(ModBlocks.DEEPSLATE_STRENGTH_ORE.get())
                 .add(ModBlocks.END_STRENGTH_ORE.get()).add(ModBlocks.NETHER_STRENGTH_ORE.get())
                 .add(ModBlocks.INFLUENCE_BLOCK.get()).add(ModBlocks.IMPURE_INFLUENCE_BLOCK.get())
@@ -45,7 +45,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.END_LIFE_ORE.get()).add(ModBlocks.NETHER_LIFE_ORE.get())
                 .add(ModBlocks.SOUL_BLOCK.get()).add(ModBlocks.IMPURE_SOUL_BLOCK.get())
                 .add(ModBlocks.SOUL_ORE.get()).add(ModBlocks.DEEPSLATE_SOUL_ORE.get())
-                .add(ModBlocks.END_SOUL_ORE.get()).add(ModBlocks.NETHER_SOUL_ORE.get())*/
+                .add(ModBlocks.END_SOUL_ORE.get()).add(ModBlocks.NETHER_SOUL_ORE.get())
                 .add(Blocks.IRON_BLOCK).add(Blocks.RAW_IRON_BLOCK).add(Blocks.GOLD_BLOCK).add(Blocks.RAW_GOLD_BLOCK)
                 .add(Blocks.COPPER_BLOCK).add(Blocks.RAW_COPPER_BLOCK).add(Blocks.REDSTONE_BLOCK).add(Blocks.LAPIS_BLOCK)
                 .add(Blocks.COAL_BLOCK).add(Blocks.DIAMOND_BLOCK).add(Blocks.EMERALD_BLOCK).add(Blocks.AMETHYST_CLUSTER)

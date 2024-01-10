@@ -17,9 +17,13 @@ import java.util.Map;
 
 public class ConductiveFurnaceBlockEntity extends AbstractFurnaceBlockEntity {
     private Map<Item, Integer> BURN_DURATION_MAP =
-            Map.of(ModItems.FIRE_QUARTZ.get(), 100,
+            Map.of(ModItems.FIRE_QUARTZ.get(), 1800,
                     ModItems.ENERGY_ORB.get(), 6400,
-                    Items.BLAZE_POWDER, 800);
+                    Items.BLAZE_ROD, 2000,
+                    Items.COAL, 1600,
+                    Items.COAL_BLOCK, 3200,
+                    Items.LAVA_BUCKET, 5400
+                    );
 
     public ConductiveFurnaceBlockEntity(BlockPos pPos, BlockState pBlockState) {
         super(ModBlockEntities.CONDUCTIVE_FURNACE_BLOCK_ENTITY.get(), pPos, pBlockState, ConductiveFurnaceRecipe.Type.INSTANCE);

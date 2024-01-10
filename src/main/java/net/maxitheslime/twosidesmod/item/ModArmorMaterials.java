@@ -19,15 +19,15 @@ public enum ModArmorMaterials implements ArmorMaterial {
         p_266655_.put(ArmorItem.Type.LEGGINGS, 5);
         p_266655_.put(ArmorItem.Type.CHESTPLATE, 7);
         p_266655_.put(ArmorItem.Type.HELMET, 5);
-    }), 15, SoundEvents.AMETHYST_BLOCK_CHIME, 3.0F, 0.1F, () -> Ingredient.of(ModItems.PURE_ROSE_QUARTZ.get()))
-    /*,
+    }), 15, SoundEvents.AMETHYST_BLOCK_CHIME, 3.0F, 0.1F, () -> Ingredient.of(ModItems.PURE_ROSE_QUARTZ.get())),
+
 
     SOUL("soul", 30, Util.make(new EnumMap<>(ArmorItem.Type.class), (p_266655_) -> {
         p_266655_.put(ArmorItem.Type.BOOTS, 5);
         p_266655_.put(ArmorItem.Type.LEGGINGS, 6);
         p_266655_.put(ArmorItem.Type.CHESTPLATE, 8);
         p_266655_.put(ArmorItem.Type.HELMET, 6);
-    }), 20, SoundEvents.SOUL_ESCAPE, 6.67F, 0.1F, () -> Ingredient.of(ModItems.CRYSTAL_SOUL_SHARD.get()))*/
+    }), 20, SoundEvents.SOUL_ESCAPE, 6.67F, 0.1F, () -> Ingredient.of(ModItems.CRYSTAL_SOUL_SHARD.get()))
     ;
 
 

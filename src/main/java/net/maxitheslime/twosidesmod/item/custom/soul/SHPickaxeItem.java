@@ -9,7 +9,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.PickaxeItem;
 import net.minecraft.world.item.Tier;
 
-public class SHPickaxeItem {} /*extends PickaxeItem {
+public class SHPickaxeItem extends PickaxeItem {
     public SHPickaxeItem(Tier pTier, int pAttackDamageModifier, float pAttackSpeedModifier, Properties pProperties) {
         super(pTier, pAttackDamageModifier, pAttackSpeedModifier, pProperties);
     }
@@ -22,4 +22,4 @@ public class SHPickaxeItem {} /*extends PickaxeItem {
 
         return super.onLeftClickEntity(stack, player, entity);
     }
-}*/
+}

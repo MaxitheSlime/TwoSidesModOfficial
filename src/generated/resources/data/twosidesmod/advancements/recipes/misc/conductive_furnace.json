@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_energy_orb": {
+    "has_energy_planks": {
       "conditions": {
         "items": [
           {
             "items": [
-              "twosidesmod:energy_orb"
+              "twosidesmod:energy_planks"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_energy_orb",
+      "has_energy_planks",
       "has_the_recipe"
     ]
   ],

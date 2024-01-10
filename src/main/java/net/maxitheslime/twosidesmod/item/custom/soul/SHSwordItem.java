@@ -9,7 +9,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.Tier;
 
-public class SHSwordItem{} /*extends SwordItem {
+public class SHSwordItem extends SwordItem {
     public SHSwordItem(Tier pTier, int pAttackDamageModifier, float pAttackSpeedModifier, Properties pProperties) {
         super(pTier, pAttackDamageModifier, pAttackSpeedModifier, pProperties);
     }
@@ -22,4 +22,4 @@ public class SHSwordItem{} /*extends SwordItem {
 
         return super.onLeftClickEntity(stack, player, entity);
     }
-}*/
+}

@@ -230,7 +230,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> WAXED_RUBY_BLOCK_3 = registerBlock("waxed_ruby_block_3",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE)));
 
-    /*public static final RegistryObject<Block> STRENGTH_BLOCK = registerBlock("crystal_strength_block",
+    public static final RegistryObject<Block> STRENGTH_BLOCK = registerBlock("crystal_strength_block",
             () -> new Block(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
                     .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)));
     public static final RegistryObject<Block> IMPURE_STRENGTH_BLOCK = registerBlock("impure_crystal_strength_block",
@@ -355,7 +355,7 @@ public class ModBlocks {
                     .strength(5f).requiresCorrectToolForDrops(), UniformInt.of(2, 5)));
     public static final RegistryObject<Block> NETHER_SOUL_ORE = registerBlock("nether_soul_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.NETHERRACK)
-                    .strength(5f).requiresCorrectToolForDrops(), UniformInt.of(2, 5)));*/
+                    .strength(5f).requiresCorrectToolForDrops(), UniformInt.of(2, 5)));
 
     public static final RegistryObject<LiquidBlock> LEMON_JUICE_BLOCK = BLOCKS.register("lemon_juice_block",
             () -> new LiquidBlock(ModFluids.SOURCE_LEMON_JUICE, BlockBehaviour.Properties.copy(Blocks.WATER).noLootTable()));

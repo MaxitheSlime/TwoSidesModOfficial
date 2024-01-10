@@ -31,7 +31,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.DEEPSLATE_ROSE_QUARTZ_ORE);
         blockWithItem(ModBlocks.END_ROSE_QUARTZ_ORE);
         blockWithItem(ModBlocks.NETHER_ROSE_QUARTZ_ORE);
-        /*blockWithItem(ModBlocks.STRENGTH_BLOCK);
+        blockWithItem(ModBlocks.STRENGTH_BLOCK);
         blockWithItem(ModBlocks.IMPURE_STRENGTH_BLOCK);
         blockWithItem(ModBlocks.STRENGTH_ORE);
         blockWithItem(ModBlocks.DEEPSLATE_STRENGTH_ORE);
@@ -72,7 +72,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.SOUL_ORE);
         blockWithItem(ModBlocks.DEEPSLATE_SOUL_ORE);
         blockWithItem(ModBlocks.END_SOUL_ORE);
-        blockWithItem(ModBlocks.NETHER_SOUL_ORE);*/
+        blockWithItem(ModBlocks.NETHER_SOUL_ORE);
 
         blockWithItem(ModBlocks.SOUND_BLOCK);
 

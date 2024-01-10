@@ -93,7 +93,7 @@ public class ModBiomeModifiers {
                 HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.RQ_GEODE_PLACED_KEY)),
                 GenerationStep.Decoration.LOCAL_MODIFICATIONS));
 
-       /*context.register(ADD_STRENGTH_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+       context.register(ADD_STRENGTH_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
                 HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.STRENGTH_ORE_PLACED_KEY)),
                 GenerationStep.Decoration.UNDERGROUND_ORES));
@@ -204,7 +204,7 @@ public class ModBiomeModifiers {
         context.register(ADD_SOUL_GEODE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
                 HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.SOUL_GEODE_PLACED_KEY)),
-                GenerationStep.Decoration.LOCAL_MODIFICATIONS));*/
+                GenerationStep.Decoration.LOCAL_MODIFICATIONS));
         
     }
 

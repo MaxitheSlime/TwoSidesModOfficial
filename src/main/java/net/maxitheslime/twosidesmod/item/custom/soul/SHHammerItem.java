@@ -9,7 +9,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Tier;
 
-public class SHHammerItem {} /*extends HammerItem {
+public class SHHammerItem extends HammerItem {
     public SHHammerItem(Tier pTier, int pAttackDamageModifier, float pAttackSpeedModifier, Properties pProperties) {
         super(pTier, pAttackDamageModifier, pAttackSpeedModifier, pProperties);
     }
@@ -22,4 +22,4 @@ public class SHHammerItem {} /*extends HammerItem {
 
         return super.onLeftClickEntity(stack, player, entity);
     }
-}*/
+}

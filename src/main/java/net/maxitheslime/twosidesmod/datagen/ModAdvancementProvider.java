@@ -2,18 +2,24 @@ package net.maxitheslime.twosidesmod.datagen;
 
 import net.maxitheslime.twosidesmod.TwoSidesMod;
 import net.maxitheslime.twosidesmod.block.ModBlocks;
+import net.maxitheslime.twosidesmod.entity.ModEntities;
 import net.maxitheslime.twosidesmod.item.ModItems;
 import net.minecraft.advancements.Advancement;
 import net.minecraft.advancements.Criterion;
 import net.minecraft.advancements.DisplayInfo;
 import net.minecraft.advancements.FrameType;
 import net.minecraft.advancements.critereon.ConsumeItemTrigger;
+import net.minecraft.advancements.critereon.DamageSourcePredicate;
 import net.minecraft.advancements.critereon.InventoryChangeTrigger;
+import net.minecraft.advancements.critereon.KilledTrigger;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.SwordItem;
+import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.common.data.ForgeAdvancementProvider;
 
@@ -41,7 +47,7 @@ public class ModAdvancementProvider implements ForgeAdvancementProvider.Advancem
                 .addCriterion("has_impure_rose_quartz", new Criterion(InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.IMPURE_ROSE_QUARTZ.get())))
                 .save(saver, new ResourceLocation(TwoSidesMod.MOD_ID, "impure_rose_quartz"), existingFileHelper);
 
-        /*//Mined magic ores
+        //Mined magic ores
         Advancement magicGet = Advancement.Builder.advancement()
                 .display(new DisplayInfo(new ItemStack(ModBlocks.STRENGTH_ORE.get()),
                         Component.literal("Further Magic"), Component.literal("We should smelt these too."),
@@ -56,20 +62,8 @@ public class ModAdvancementProvider implements ForgeAdvancementProvider.Advancem
                 .addCriterion("has_impure_life", new Criterion(InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.IMPURE_CRYSTAL_LIFE_SHARD.get())))
                 .addCriterion("has_impure_soul", new Criterion(InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.IMPURE_CRYSTAL_SOUL_SHARD.get())))
                 .save(saver, new ResourceLocation(TwoSidesMod.MOD_ID, "impure_magic"), existingFileHelper);
-        */
-        //got supplies for the Purification Table
-        Advancement purificationSupplies = Advancement.Builder.advancement()
-                .display(new DisplayInfo(new ItemStack(Items.WRITABLE_BOOK),
-                        Component.literal("Purification Supplies"), Component.literal("You need power and some kind of fluid to better purify these gems."),
-                        null, FrameType.TASK,
-                        true, true, false))
-                .parent(rqGet)
-                .addCriterion("has_lemon_juice_bucket", new Criterion(InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.LEMON_JUICE_BUCKET.get())))
-                .addCriterion("has_energy_orb", new Criterion(InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.ENERGY_ORB.get())))
-                .addCriterion("has_impure_rose_quartz", new Criterion(InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.IMPURE_ROSE_QUARTZ.get())))
-                .save(saver, new ResourceLocation(TwoSidesMod.MOD_ID, "purification_supplies"), existingFileHelper);
 
-        //Crafted the Purification Table
+        /*//Crafted the Purification Table
         Advancement purificationTable = Advancement.Builder.advancement()
                 .display(new DisplayInfo(new ItemStack(ModBlocks.PURIFICATION_TABLE.get()),
                         Component.literal("Time to Purify!"), Component.literal("A little bit of acidity, a little electrcity, and shaboom!"),
@@ -78,7 +72,7 @@ public class ModAdvancementProvider implements ForgeAdvancementProvider.Advancem
                 .parent(purificationSupplies)
                 .addCriterion("has_purification_table", new Criterion(InventoryChangeTrigger.TriggerInstance.hasItems(ModBlocks.PURIFICATION_TABLE.get())))
                 .save(saver, new ResourceLocation(TwoSidesMod.MOD_ID, "purification_table"), existingFileHelper);
-
+        */
 
         //Mined rose quartz or or ds rose quartz ore
         Advancement fireQuartz = Advancement.Builder.advancement()
@@ -101,6 +95,18 @@ public class ModAdvancementProvider implements ForgeAdvancementProvider.Advancem
                 .addCriterion("has_conductive_furnace", new Criterion(InventoryChangeTrigger.TriggerInstance.hasItems(ModBlocks.CONDUCTIVE_FURNACE.get())))
                 .addCriterion("has_energy_orb", new Criterion(InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.ENERGY_ORB.get())))
                 .save(saver, new ResourceLocation(TwoSidesMod.MOD_ID, "conductive_furnace"), existingFileHelper);
+
+        //got supplies for the Conductive Furnace
+        Advancement ionizationSupplies = Advancement.Builder.advancement()
+                .display(new DisplayInfo(new ItemStack(Items.WRITABLE_BOOK),
+                        Component.literal("Ionization Supplies"), Component.literal("You need power and some kind of material."),
+                        null, FrameType.TASK,
+                        true, true, false))
+                .parent(superFurnace)
+                .addCriterion("has_conductive_furnace", new Criterion(InventoryChangeTrigger.TriggerInstance.hasItems(ModBlocks.CONDUCTIVE_FURNACE.get())))
+                .addCriterion("has_fire_quartz", new Criterion(InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.FIRE_QUARTZ.get())))
+                .addCriterion("has_impure_rose_quartz", new Criterion(InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.IMPURE_ROSE_QUARTZ.get())))
+                .save(saver, new ResourceLocation(TwoSidesMod.MOD_ID, "purification_supplies"), existingFileHelper);
 
         //Crafted the ore detector
         Advancement metalDetector = Advancement.Builder.advancement()
@@ -404,14 +410,14 @@ public class ModAdvancementProvider implements ForgeAdvancementProvider.Advancem
                 .addCriterion("has_rs_spawn_egg", new Criterion(InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.RS_SPAWN_EGG.get())))
                 .save(saver, new ResourceLocation(TwoSidesMod.MOD_ID, "rs_spawn_egg"), existingFileHelper);
 
-        //slay a ruby statue
+        /*//slay a ruby statue
         Advancement rsDefeat = Advancement.Builder.advancement()
                 .display(new DisplayInfo(new ItemStack(ModBlocks.RUBY_BLOCK.get()),
                         Component.literal("Corpse Trophy"), Component.literal("That's it? Just another red block? There has to be more to it? Right?"),
                         null, FrameType.TASK,
                         true, true, true))
                 .parent(rsSpawner)
-                .addCriterion("has_ruby_block", new Criterion(InventoryChangeTrigger.TriggerInstance.hasItems(ModBlocks.RUBY_BLOCK.get())))
-                .save(saver, new ResourceLocation(TwoSidesMod.MOD_ID, "ruby_block"), existingFileHelper);
+                .addCriterion("has_ruby_block", new Criterion(KilledTrigger.TriggerInstance.playerKilledEntity().matches(Player, LootContext.EntityTarget.KILLER_PLAYER, ))
+                .save(saver, new ResourceLocation(TwoSidesMod.MOD_ID, "ruby_block"), existingFileHelper);*/
     }
 }

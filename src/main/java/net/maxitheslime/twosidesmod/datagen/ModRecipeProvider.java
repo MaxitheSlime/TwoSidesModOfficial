@@ -25,7 +25,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     private static final List<ItemLike> ROSE_QUARTZ_SMELTABLES = List.of(ModItems.IMPURE_ROSE_QUARTZ.get(),
             ModBlocks.ROSE_QUARTZ_ORE.get(), ModBlocks.DEEPSLATE_ROSE_QUARTZ_ORE.get(), ModBlocks.NETHER_ROSE_QUARTZ_ORE.get(),
             ModBlocks.END_ROSE_QUARTZ_ORE.get());
-    /*private static final List<ItemLike> STRENGTH_SMELTABLES = List.of(ModItems.IMPURE_CRYSTAL_STRENGTH_SHARD.get(),
+    private static final List<ItemLike> STRENGTH_SMELTABLES = List.of(ModItems.IMPURE_CRYSTAL_STRENGTH_SHARD.get(),
             ModBlocks.STRENGTH_ORE.get(), ModBlocks.DEEPSLATE_STRENGTH_ORE.get(), ModBlocks.NETHER_STRENGTH_ORE.get(),
             ModBlocks.END_STRENGTH_ORE.get());
     private static final List<ItemLike> INFLUENCE_SMELTABLES = List.of(ModItems.IMPURE_CRYSTAL_INFLUENCE_SHARD.get(),
@@ -45,7 +45,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
             ModBlocks.END_LIFE_ORE.get());
     private static final List<ItemLike> SOUL_SMELTABLES = List.of(ModItems.IMPURE_CRYSTAL_SOUL_SHARD.get(),
             ModBlocks.SOUL_ORE.get(), ModBlocks.DEEPSLATE_SOUL_ORE.get(), ModBlocks.NETHER_SOUL_ORE.get(),
-            ModBlocks.END_SOUL_ORE.get());*/
+            ModBlocks.END_SOUL_ORE.get());
 
     public ModRecipeProvider(PackOutput pOutput) {
         super(pOutput);
@@ -62,7 +62,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_pure_rose_quartz", inventoryTrigger(ItemPredicate.Builder.item().
                         of(ModItems.PURE_ROSE_QUARTZ.get()).build()))
                 .save(pWriter);
-        /*ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.STRENGTH_BLOCK.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.STRENGTH_BLOCK.get())
                 .pattern("AAA")
                 .pattern("AAA")
                 .pattern("AAA")
@@ -117,7 +117,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('A', ModItems.CRYSTAL_SOUL_SHARD.get())
                 .unlockedBy("has_crystal_soul_shard", inventoryTrigger(ItemPredicate.Builder.item().
                         of(ModItems.CRYSTAL_SOUL_SHARD.get()).build()))
-                .save(pWriter);*/
+                .save(pWriter);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.ALT_ENERGY_SAPLING.get(), 8)
                 .pattern("AAA")
@@ -176,7 +176,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                         of(ModItems.ENERGY_BOAT.get()).build()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.PURIFICATION_TABLE.get())
+        /*ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.PURIFICATION_TABLE.get())
                 .pattern("ABA")
                 .pattern("RGR")
                 .pattern("ISI")
@@ -188,17 +188,17 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('S', Items.SMOOTH_STONE_SLAB)
                 .unlockedBy("has_iron_ingot", inventoryTrigger(ItemPredicate.Builder.item().
                         of(Items.IRON_INGOT).build()))
-                .save(pWriter);
+                .save(pWriter);*/
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.CONDUCTIVE_FURNACE.get())
                 .pattern(" E ")
                 .pattern("AFA")
                 .pattern(" E ")
                 .define('F', Blocks.FURNACE)
-                .define('E', ModItems.ENERGY_ORB.get())
+                .define('E', ModBlocks.ENERGY_PLANKS.get())
                 .define('A', Items.AMETHYST_SHARD)
-                .unlockedBy("has_energy_orb", inventoryTrigger(ItemPredicate.Builder.item().
-                        of(ModItems.ENERGY_ORB.get()).build()))
+                .unlockedBy("has_energy_planks", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(ModBlocks.ENERGY_PLANKS.get()).build()))
                 .save(pWriter);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.ROSE_QUARTZ_LAMP.get())
@@ -717,7 +717,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .save(pWriter);
 
 
-        /*ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SOUL_SWORD.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SOUL_SWORD.get())
                 .pattern("AAS")
                 .pattern(" S ")
                 .pattern(" S ")
@@ -855,11 +855,11 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('R', ModItems.CRYSTAL_SOUL_SHARD.get())
                 .unlockedBy("has_crystal_soul_shard", inventoryTrigger(ItemPredicate.Builder.item().
                         of(ModItems.CRYSTAL_SOUL_SHARD.get()).build()))
-                .save(pWriter);*/
+                .save(pWriter);
 
         nineBlockStorageRecipes(pWriter, RecipeCategory.MISC, ModItems.IMPURE_ROSE_QUARTZ.get(), RecipeCategory.MISC, ModBlocks.IMPURE_ROSE_QUARTZ_BLOCK.get(),
                 "twosidesmod:impure_rose_quartz", "pure_rose_quartz", "twosidesmod:impure_rose_quartz_block", "pure_rose_quartz");
-        /*nineBlockStorageRecipes(pWriter, RecipeCategory.MISC, ModItems.IMPURE_CRYSTAL_STRENGTH_SHARD.get(), RecipeCategory.MISC, ModBlocks.IMPURE_STRENGTH_BLOCK.get(),
+        nineBlockStorageRecipes(pWriter, RecipeCategory.MISC, ModItems.IMPURE_CRYSTAL_STRENGTH_SHARD.get(), RecipeCategory.MISC, ModBlocks.IMPURE_STRENGTH_BLOCK.get(),
                 "twosidesmod:impure_crystal_strength_shard", "crystal_strength_shard", "twosidesmod:impure_crystal_strength_block", "crystal_strength_shard");
         nineBlockStorageRecipes(pWriter, RecipeCategory.MISC, ModItems.IMPURE_CRYSTAL_INFLUENCE_SHARD.get(), RecipeCategory.MISC, ModBlocks.IMPURE_INFLUENCE_BLOCK.get(),
                 "twosidesmod:impure_crystal_influence_shard", "crystal_influence_shard", "twosidesmod:impure_crystal_influence_block", "crystal_influence_shard");
@@ -872,11 +872,11 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         nineBlockStorageRecipes(pWriter, RecipeCategory.MISC, ModItems.IMPURE_CRYSTAL_LIFE_SHARD.get(), RecipeCategory.MISC, ModBlocks.IMPURE_LIFE_BLOCK.get(),
                 "twosidesmod:impure_crystal_life_shard", "crystal_life_shard", "twosidesmod:impure_crystal_life_block", "crystal_life_shard");
         nineBlockStorageRecipes(pWriter, RecipeCategory.MISC, ModItems.IMPURE_CRYSTAL_SOUL_SHARD.get(), RecipeCategory.MISC, ModBlocks.IMPURE_SOUL_BLOCK.get(),
-                "twosidesmod:impure_crystal_soul_shard", "crystal_soul_shard", "twosidesmod:impure_crystal_soul_block", "crystal_soul_shard");*/
+                "twosidesmod:impure_crystal_soul_shard", "crystal_soul_shard", "twosidesmod:impure_crystal_soul_block", "crystal_soul_shard");
 
         oreSmelting(pWriter, ROSE_QUARTZ_SMELTABLES, RecipeCategory.MISC, ModItems.PURE_ROSE_QUARTZ.get(), 0.25f, 200, "pure_rose_quartz");
         oreBlasting(pWriter, ROSE_QUARTZ_SMELTABLES, RecipeCategory.MISC, ModItems.PURE_ROSE_QUARTZ.get(), 0.25f, 100, "pure_rose_quartz");
-        /*oreSmelting(pWriter, STRENGTH_SMELTABLES, RecipeCategory.MISC, ModItems.CRYSTAL_STRENGTH_SHARD.get(), 0.25f, 200, "crystal_strength_shard");
+        oreSmelting(pWriter, STRENGTH_SMELTABLES, RecipeCategory.MISC, ModItems.CRYSTAL_STRENGTH_SHARD.get(), 0.25f, 200, "crystal_strength_shard");
         oreBlasting(pWriter, STRENGTH_SMELTABLES, RecipeCategory.MISC, ModItems.CRYSTAL_STRENGTH_SHARD.get(), 0.25f, 100, "crystal_strength_shard");
         oreSmelting(pWriter, INFLUENCE_SMELTABLES, RecipeCategory.MISC, ModItems.CRYSTAL_INFLUENCE_SHARD.get(), 0.25f, 200, "crystal_influence_shard");
         oreBlasting(pWriter, INFLUENCE_SMELTABLES, RecipeCategory.MISC, ModItems.CRYSTAL_INFLUENCE_SHARD.get(), 0.25f, 100, "crystal_influence_shard");
@@ -889,12 +889,12 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         oreSmelting(pWriter, LIFE_SMELTABLES, RecipeCategory.MISC, ModItems.CRYSTAL_LIFE_SHARD.get(), 0.25f, 200, "crystal_life_shard");
         oreBlasting(pWriter, LIFE_SMELTABLES, RecipeCategory.MISC, ModItems.CRYSTAL_LIFE_SHARD.get(), 0.25f, 100, "crystal_life_shard");
         oreSmelting(pWriter, SOUL_SMELTABLES, RecipeCategory.MISC, ModItems.CRYSTAL_SOUL_SHARD.get(), 0.25f, 200, "crystal_soul_shard");
-        oreBlasting(pWriter, SOUL_SMELTABLES, RecipeCategory.MISC, ModItems.CRYSTAL_SOUL_SHARD.get(), 0.25f, 100, "crystal_soul_shard");*/
+        oreBlasting(pWriter, SOUL_SMELTABLES, RecipeCategory.MISC, ModItems.CRYSTAL_SOUL_SHARD.get(), 0.25f, 100, "crystal_soul_shard");
 
-        new PurificationRecipeProvider(ModItems.IMPURE_ROSE_QUARTZ.get(), ModItems.PURE_ROSE_QUARTZ.get(), 3, 160, 1500,
+        /*new PurificationRecipeProvider(ModItems.IMPURE_ROSE_QUARTZ.get(), ModItems.PURE_ROSE_QUARTZ.get(), 3, 160, 1500,
                 new FluidStack(ModFluids.SOURCE_LEMON_JUICE.get(), 500))
                 .unlockedBy("has_impure_rose_quartz", has(ModItems.IMPURE_ROSE_QUARTZ.get())).save(pWriter);
-        /*new PurificationRecipeProvider(ModItems.IMPURE_CRYSTAL_STRENGTH_SHARD.get(), ModItems.CRYSTAL_STRENGTH_SHARD.get(), 3, 160, 1500,
+        new PurificationRecipeProvider(ModItems.IMPURE_CRYSTAL_STRENGTH_SHARD.get(), ModItems.CRYSTAL_STRENGTH_SHARD.get(), 3, 160, 1500,
                 new FluidStack(ModFluids.SOURCE_LEMON_JUICE.get(), 500))
                 .unlockedBy("has_impure_crystal_strength_shard", has(ModItems.IMPURE_CRYSTAL_STRENGTH_SHARD.get())).save(pWriter);
         new PurificationRecipeProvider(ModItems.IMPURE_CRYSTAL_INFLUENCE_SHARD.get(), ModItems.CRYSTAL_INFLUENCE_SHARD.get(), 3, 160, 1500,

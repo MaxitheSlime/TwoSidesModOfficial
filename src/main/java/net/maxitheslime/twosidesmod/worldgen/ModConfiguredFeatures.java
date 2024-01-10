@@ -76,7 +76,7 @@ public class ModConfiguredFeatures {
         List<OreConfiguration.TargetBlockState> overworldRoseQuartzOres = List.of(OreConfiguration.target(stoneReplaceabeles,
                         ModBlocks.ROSE_QUARTZ_ORE.get().defaultBlockState()),
                 OreConfiguration.target(deepslateReplaceabeles, ModBlocks.DEEPSLATE_ROSE_QUARTZ_ORE.get().defaultBlockState()));
-        /*List<OreConfiguration.TargetBlockState> overworldStrengthOres = List.of(OreConfiguration.target(stoneReplaceabeles,
+        List<OreConfiguration.TargetBlockState> overworldStrengthOres = List.of(OreConfiguration.target(stoneReplaceabeles,
                         ModBlocks.STRENGTH_ORE.get().defaultBlockState()),
                 OreConfiguration.target(deepslateReplaceabeles, ModBlocks.DEEPSLATE_STRENGTH_ORE.get().defaultBlockState()));
         List<OreConfiguration.TargetBlockState> overworldInfluenceOres = List.of(OreConfiguration.target(stoneReplaceabeles,
@@ -97,7 +97,7 @@ public class ModConfiguredFeatures {
         List<OreConfiguration.TargetBlockState> overworldSoulOres = List.of(OreConfiguration.target(stoneReplaceabeles,
                         ModBlocks.SOUL_ORE.get().defaultBlockState()),
                 OreConfiguration.target(deepslateReplaceabeles, ModBlocks.DEEPSLATE_SOUL_ORE.get().defaultBlockState()));
-        */
+
         
         register(context, ENERGY_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.ENERGY_LOG.get()),
@@ -139,7 +139,7 @@ public class ModConfiguredFeatures {
                         UniformInt.of(2, 6), UniformInt.of(1, 2),
                         -18, 18, 0.075D, 1));
 
-        /*register(context, OVERWORLD_STRENGTH_ORE_KEY, Feature.ORE, new OreConfiguration(overworldStrengthOres, 9));
+        register(context, OVERWORLD_STRENGTH_ORE_KEY, Feature.ORE, new OreConfiguration(overworldStrengthOres, 9));
         register(context, NETHER_STRENGTH_ORE_KEY, Feature.ORE, new OreConfiguration(netherrackReplaceabeles,
                 ModBlocks.NETHER_STRENGTH_ORE.get().defaultBlockState(), 9));
         register(context, END_STRENGTH_ORE_KEY, Feature.ORE, new OreConfiguration(endReplaceabeles,
@@ -264,7 +264,7 @@ public class ModConfiguredFeatures {
                         new GeodeCrackSettings(0.25D, 1.5D, 1), 0.5D, 0.1D,
                         true, UniformInt.of(3, 8),
                         UniformInt.of(2, 6), UniformInt.of(1, 2),
-                        -18, 18, 0.075D, 1));*/
+                        -18, 18, 0.075D, 1));
     }
 
 

@@ -115,7 +115,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.POTTED_ENERGY_SAPLING.get(), createPotFlowerItemTable(ModBlocks.ENERGY_SAPLING.get()));
         this.add(ModBlocks.POTTED_ALT_ENERGY_SAPLING.get(), createPotFlowerItemTable(ModBlocks.ALT_ENERGY_SAPLING.get()));
 
-        /*this.dropSelf(ModBlocks.STRENGTH_BLOCK.get());
+        this.dropSelf(ModBlocks.STRENGTH_BLOCK.get());
         this.dropSelf(ModBlocks.IMPURE_STRENGTH_BLOCK.get());
         this.add(ModBlocks.STRENGTH_ORE.get(),
                 block -> createOreDrop(ModBlocks.STRENGTH_ORE.get(), ModItems.IMPURE_CRYSTAL_STRENGTH_SHARD.get()));
@@ -185,7 +185,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 block -> createOreDrop(ModBlocks.END_SOUL_ORE.get(), ModItems.IMPURE_CRYSTAL_SOUL_SHARD.get()));
         this.add(ModBlocks.NETHER_SOUL_ORE.get(),
                 block -> createOreDrop(ModBlocks.NETHER_SOUL_ORE.get(), ModItems.IMPURE_CRYSTAL_SOUL_SHARD.get()));
-        */
+
     }
 
     @Override

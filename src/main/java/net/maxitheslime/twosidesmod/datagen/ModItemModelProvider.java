@@ -78,7 +78,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.ENERGY_ORB);
         simpleItem(ModItems.ENERGY_SEEDS);
 
-        /*simpleItem(ModItems.CRYSTAL_STRENGTH_SHARD);
+        simpleItem(ModItems.CRYSTAL_STRENGTH_SHARD);
         simpleItem(ModItems.IMPURE_CRYSTAL_STRENGTH_SHARD);
         simpleItem(ModItems.CRYSTAL_INFLUENCE_SHARD);
         simpleItem(ModItems.IMPURE_CRYSTAL_INFLUENCE_SHARD);
@@ -97,7 +97,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.SOUL_CHESTPLATE);
         simpleItem(ModItems.SOUL_LEGGINGS);
         simpleItem(ModItems.SOUL_BOOTS);
-        simpleItem(ModItems.SOUL_HORSE_ARMOR);*/
+        simpleItem(ModItems.SOUL_HORSE_ARMOR);
     }
 
     private ItemModelBuilder saplingItem(RegistryObject<Block> item) {

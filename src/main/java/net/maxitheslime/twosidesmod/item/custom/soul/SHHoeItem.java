@@ -9,7 +9,7 @@ import net.minecraft.world.item.HoeItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Tier;
 
-public class SHHoeItem {}/*extends HoeItem {
+public class SHHoeItem extends HoeItem {
     public SHHoeItem(Tier pTier, int pAttackDamageModifier, float pAttackSpeedModifier, Properties pProperties) {
         super(pTier, pAttackDamageModifier, pAttackSpeedModifier, pProperties);
     }
@@ -22,4 +22,4 @@ public class SHHoeItem {}/*extends HoeItem {
 
         return super.onLeftClickEntity(stack, player, entity);
     }
-}*/
+}
