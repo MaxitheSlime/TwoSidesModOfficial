@@ -30,6 +30,15 @@ public class ModEffects {
                     .addAttributeModifier(Attributes.MAX_HEALTH, "7107DE5E-7CE8-4030-940E-514C1F160895",
                             -0.5f, AttributeModifier.Operation.MULTIPLY_TOTAL));
 
+    public static final RegistryObject<MobEffect> LIFE_BOOST = MOB_EFFECTS.register("life_boost",
+            () -> new LifeBoostEffect(MobEffectCategory.BENEFICIAL, 0x4169e1)
+                    .addAttributeModifier(Attributes.MAX_HEALTH, "7107DE5E-7CE8-4030-940E-514C1F160896",
+                            0.25, AttributeModifier.Operation.MULTIPLY_TOTAL));
+    public static final RegistryObject<MobEffect> LIFE_BOOST_II = MOB_EFFECTS.register("life_boost_ii",
+            () -> new LifeBoostEffect(MobEffectCategory.BENEFICIAL, 0x4169e1)
+                    .addAttributeModifier(Attributes.MAX_HEALTH, "7107DE5E-7CE8-4030-940E-514C1F160897",
+                            0.33, AttributeModifier.Operation.MULTIPLY_TOTAL));
+
     public static void register(IEventBus eventBus) {
         MOB_EFFECTS.register(eventBus);
     }

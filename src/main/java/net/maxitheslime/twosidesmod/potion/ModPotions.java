@@ -19,6 +19,10 @@ public class ModPotions {
             () -> new Potion(new MobEffectInstance(ModEffects.SOUL_HARROWING.get(), 600, 0)));
     public static final RegistryObject<Potion> SOUL_HARROW_II_POTION = POTIONS.register("soul_harrow_ii",
             () -> new Potion(new MobEffectInstance(ModEffects.SOUL_HARROWING_II.get(), 600, 0)));
+    public static final RegistryObject<Potion> LIFE_BOOST_POTION = POTIONS.register("life_boost",
+            () -> new Potion(new MobEffectInstance(ModEffects.LIFE_BOOST.get(), 300, 0)));
+    public static final RegistryObject<Potion> LIFE_BOOST_II_POTION = POTIONS.register("life_boost_ii",
+            () -> new Potion(new MobEffectInstance(ModEffects.LIFE_BOOST.get(), 600, 0)));
 
     public static void register(IEventBus eventBus) {
         POTIONS.register(eventBus);
