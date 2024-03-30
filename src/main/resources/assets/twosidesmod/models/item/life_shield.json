@@ -423,6 +423,9 @@
 			}
 		}
 	],
+	"overrides": [
+		{"predicate": {"blocking": 1}, "model": "twosidesmod:item/life_shield_blocking"}
+	],
 	"display": {
 		"thirdperson_righthand": {
 			"rotation": [0, -72, 0],
@@ -445,6 +448,7 @@
 			"scale": [0.5, 0.5, 0.5]
 		},
 		"gui": {
+			"rotation": [0, 180, 0],
 			"scale": [0.5, 0.5, 0.5]
 		},
 		"fixed": {
@@ -495,14 +499,6 @@
 					"children": [29, 30, 31]
 				}
 			]
-		}
-	],
-	"overrides": [
-		{
-			"predicate": {
-				"blocking": 1
-			},
-			"model": "twosidesmod:item/life_shield_blocking"
 		}
 	]
 }
