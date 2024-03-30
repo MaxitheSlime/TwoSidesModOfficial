@@ -1,7 +1,7 @@
 {
   "type": "twosidesmod:conductive_furnace",
   "category": "misc",
-  "cookingtime": 120,
+  "cookingtime": 1200,
   "experience": 2.0,
   "ingredient": {
     "item": "minecraft:coal"
