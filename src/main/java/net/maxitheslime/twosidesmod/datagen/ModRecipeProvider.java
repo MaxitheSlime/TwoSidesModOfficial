@@ -716,7 +716,6 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                         of(ModBlocks.ENERGY_LOG.get()).build()))
                 .save(pWriter);
 
-
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SOUL_SWORD.get())
                 .pattern("AAS")
                 .pattern(" S ")
@@ -855,6 +854,134 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('R', ModItems.CRYSTAL_SOUL_SHARD.get())
                 .unlockedBy("has_crystal_soul_shard", inventoryTrigger(ItemPredicate.Builder.item().
                         of(ModItems.CRYSTAL_SOUL_SHARD.get()).build()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.LIFE_SWORD.get())
+                .pattern(" L ")
+                .pattern(" S ")
+                .pattern(" L ")
+                .define('L', ModItems.CRYSTAL_LIFE_SHARD.get())
+                .define('S', Items.STICK)
+                .unlockedBy("has_crystal_life_shard", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(ModItems.CRYSTAL_LIFE_SHARD.get()).build()))
+                .save(pWriter);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.LIFE_AXE.get())
+                .pattern("LLL")
+                .pattern("LS ")
+                .pattern(" L ")
+                .define('L', ModItems.CRYSTAL_LIFE_SHARD.get())
+                .define('S', Items.STICK)
+                .unlockedBy("has_crystal_life_shard", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(ModItems.CRYSTAL_LIFE_SHARD.get()).build()))
+                .save(pWriter);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.LIFE_SHOVEL.get())
+                .pattern(" L ")
+                .pattern("LSL")
+                .pattern(" L ")
+                .define('L', ModItems.CRYSTAL_LIFE_SHARD.get())
+                .define('S', Items.STICK)
+                .unlockedBy("has_crystal_life_shard", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(ModItems.CRYSTAL_LIFE_SHARD.get()).build()))
+                .save(pWriter);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.LIFE_HOE.get())
+                .pattern("L L")
+                .pattern(" S ")
+                .pattern(" L ")
+                .define('L', ModItems.CRYSTAL_LIFE_SHARD.get())
+                .define('S', Items.STICK)
+                .unlockedBy("has_crystal_life_shard", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(ModItems.CRYSTAL_LIFE_SHARD.get()).build()))
+                .save(pWriter);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.LIFE_PICKAXE.get())
+                .pattern(" S ")
+                .pattern("LS ")
+                .pattern(" L ")
+                .define('L', ModItems.CRYSTAL_LIFE_SHARD.get())
+                .define('S', Items.STICK)
+                .unlockedBy("has_crystal_life_shard", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(ModItems.CRYSTAL_LIFE_SHARD.get()).build()))
+                .save(pWriter);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.LIFE_HAMMER.get())
+                .pattern(" P ")
+                .pattern("PSP")
+                .pattern(" L ")
+                .define('L', ModItems.CRYSTAL_LIFE_SHARD.get())
+                .define('P', ModItems.LIFE_PICKAXE.get())
+                .define('S', Items.STICK)
+                .unlockedBy("has_crystal_life_shard", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(ModItems.CRYSTAL_LIFE_SHARD.get()).build()))
+                .save(pWriter);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.LIFE_PAXEL.get())
+                .pattern(" P ")
+                .pattern("ALS")
+                .pattern(" L ")
+                .define('L', ModItems.CRYSTAL_LIFE_SHARD.get())
+                .define('S', ModItems.LIFE_SHOVEL.get())
+                .define('P', ModItems.LIFE_PICKAXE.get())
+                .define('A', ModItems.LIFE_AXE.get())
+                .unlockedBy("has_crystal_life_shard", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(ModItems.CRYSTAL_LIFE_SHARD.get()).build()))
+                .save(pWriter);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.LIFE_BOW.get())
+                .pattern("W W")
+                .pattern("LLL")
+                .pattern(" L ")
+                .define('L', ModItems.CRYSTAL_LIFE_SHARD.get())
+                .define('W', Items.BLUE_WOOL)
+                .unlockedBy("has_crystal_life_shard", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(ModItems.CRYSTAL_LIFE_SHARD.get()).build()))
+                .save(pWriter);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.LIFE_SHIELD.get())
+                .pattern("PLP")
+                .pattern("LSL")
+                .pattern("PLP")
+                .define('L', ModItems.CRYSTAL_LIFE_SHARD.get())
+                .define('S', Items.SPORE_BLOSSOM)
+                .define('P', Items.AZALEA_LEAVES)
+                .unlockedBy("has_crystal_life_shard", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(ModItems.CRYSTAL_LIFE_SHARD.get()).build()))
+                .save(pWriter);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.LIFE_HELMET.get())
+                .pattern("LLL")
+                .pattern("L L")
+                .pattern("   ")
+                .define('L', ModItems.CRYSTAL_LIFE_SHARD.get())
+                .unlockedBy("has_crystal_life_shard", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(ModItems.CRYSTAL_LIFE_SHARD.get()).build()))
+                .save(pWriter);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.LIFE_CHESTPLATE.get())
+                .pattern("L L")
+                .pattern("LLL")
+                .pattern("LLL")
+                .define('L', ModItems.CRYSTAL_LIFE_SHARD.get())
+                .unlockedBy("has_crystal_life_shard", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(ModItems.CRYSTAL_LIFE_SHARD.get()).build()))
+                .save(pWriter);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.LIFE_LEGGINGS.get())
+                .pattern("LLL")
+                .pattern("L L")
+                .pattern("L L")
+                .define('L', ModItems.CRYSTAL_LIFE_SHARD.get())
+                .unlockedBy("has_crystal_life_shard", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(ModItems.CRYSTAL_LIFE_SHARD.get()).build()))
+                .save(pWriter);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.LIFE_BOOTS.get())
+                .pattern("L L")
+                .pattern("L L")
+                .pattern("   ")
+                .define('L', ModItems.CRYSTAL_LIFE_SHARD.get())
+                .unlockedBy("has_crystal_life_shard", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(ModItems.CRYSTAL_LIFE_SHARD.get()).build()))
+                .save(pWriter);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.LIFE_HORSE_ARMOR.get())
+                .pattern(" LR")
+                .pattern("RBR")
+                .pattern("RRR")
+                .define('R', ModItems.CRYSTAL_LIFE_SHARD.get())
+                .define('B', Items.BLUE_WOOL)
+                .define('L', Items.LEAD)
+                .unlockedBy("has_soul_horse_armor", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(ModItems.SOUL_HORSE_ARMOR.get()).build()))
                 .save(pWriter);
 
         nineBlockStorageRecipes(pWriter, RecipeCategory.MISC, ModItems.IMPURE_ROSE_QUARTZ.get(), RecipeCategory.MISC, ModBlocks.IMPURE_ROSE_QUARTZ_BLOCK.get(),

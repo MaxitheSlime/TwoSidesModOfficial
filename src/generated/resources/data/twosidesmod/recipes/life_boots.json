@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "L": {
+      "item": "twosidesmod:crystal_life_shard"
+    }
+  },
+  "pattern": [
+    "L L",
+    "L L",
+    "   "
+  ],
+  "result": {
+    "item": "twosidesmod:life_boots"
+  },
+  "show_notification": true
+}

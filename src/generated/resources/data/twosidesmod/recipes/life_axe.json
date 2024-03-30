@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "L": {
+      "item": "twosidesmod:crystal_life_shard"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "LLL",
+    "LS ",
+    " L "
+  ],
+  "result": {
+    "item": "twosidesmod:life_axe"
+  },
+  "show_notification": true
+}

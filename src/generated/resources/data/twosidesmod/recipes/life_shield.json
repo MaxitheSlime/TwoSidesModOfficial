@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "L": {
+      "item": "twosidesmod:crystal_life_shard"
+    },
+    "P": {
+      "item": "minecraft:azalea_leaves"
+    },
+    "S": {
+      "item": "minecraft:spore_blossom"
+    }
+  },
+  "pattern": [
+    "PLP",
+    "LSL",
+    "PLP"
+  ],
+  "result": {
+    "item": "twosidesmod:life_shield"
+  },
+  "show_notification": true
+}

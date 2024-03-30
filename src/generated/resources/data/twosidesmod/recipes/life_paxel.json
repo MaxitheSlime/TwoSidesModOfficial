@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "twosidesmod:life_axe"
+    },
+    "L": {
+      "item": "twosidesmod:crystal_life_shard"
+    },
+    "P": {
+      "item": "twosidesmod:life_pickaxe"
+    },
+    "S": {
+      "item": "twosidesmod:life_shovel"
+    }
+  },
+  "pattern": [
+    " P ",
+    "ALS",
+    " L "
+  ],
+  "result": {
+    "item": "twosidesmod:life_paxel"
+  },
+  "show_notification": true
+}
