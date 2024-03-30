@@ -98,6 +98,11 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.SOUL_LEGGINGS);
         simpleItem(ModItems.SOUL_BOOTS);
         simpleItem(ModItems.SOUL_HORSE_ARMOR);
+        simpleItem(ModItems.LIFE_HELMET);
+        simpleItem(ModItems.LIFE_CHESTPLATE);
+        simpleItem(ModItems.LIFE_LEGGINGS);
+        simpleItem(ModItems.LIFE_BOOTS);
+        simpleItem(ModItems.LIFE_HORSE_ARMOR);
     }
 
     private ItemModelBuilder saplingItem(RegistryObject<Block> item) {

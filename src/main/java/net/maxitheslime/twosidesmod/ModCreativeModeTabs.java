@@ -75,6 +75,20 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.SOUL_BOOTS.get());
                         pOutput.accept(ModItems.SOUL_SHIELD.get());
                         pOutput.accept(ModItems.SOUL_HORSE_ARMOR.get());
+                        pOutput.accept(ModItems.LIFE_SWORD.get());
+                        pOutput.accept(ModItems.LIFE_PICKAXE.get());
+                        pOutput.accept(ModItems.LIFE_SHOVEL.get());
+                        pOutput.accept(ModItems.LIFE_AXE.get());
+                        pOutput.accept(ModItems.LIFE_HOE.get());
+                        pOutput.accept(ModItems.LIFE_PAXEL.get());
+                        pOutput.accept(ModItems.LIFE_HAMMER.get());
+                        pOutput.accept(ModItems.LIFE_BOW.get());
+                        pOutput.accept(ModItems.LIFE_HELMET.get());
+                        pOutput.accept(ModItems.LIFE_CHESTPLATE.get());
+                        pOutput.accept(ModItems.LIFE_LEGGINGS.get());
+                        pOutput.accept(ModItems.LIFE_BOOTS.get());
+                        pOutput.accept(ModItems.LIFE_SHIELD.get());
+                        pOutput.accept(ModItems.LIFE_HORSE_ARMOR.get());
 
                         pOutput.accept(ModItems.REMOTE_CONTROL.get());
 

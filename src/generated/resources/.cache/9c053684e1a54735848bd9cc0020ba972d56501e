@@ -1,4 +1,4 @@
-// 1.20.1	2024-01-09T23:53:57.4843035	Item Models: twosidesmod
+// 1.20.1	2024-03-29T22:30:47.4699061	Item Models: twosidesmod
 db559856ec82dd38433341b7b91e3e707d06b294 assets/twosidesmod/models/item/alt_energy_sapling.json
 474ce6fcc32ff61796fe4fc40ccddacc407bd6b0 assets/twosidesmod/models/item/bar_brawl_record.json
 b2a889a54fd6f4db2099cbfc6a7074cb4590009f assets/twosidesmod/models/item/crystal_control_shard.json
@@ -32,6 +32,11 @@ f6f5d7086430292fbed0bcaea46ace0b94a81ebc assets/twosidesmod/models/item/impure_c
 750e940eee1c06b04fd54b6c5f62dbfc2b0bc118 assets/twosidesmod/models/item/lemon.json
 ac76dd13963e1d1155735bd9c5a6292f380421da assets/twosidesmod/models/item/lemon_juice_bucket.json
 e55d336256f2bb5593ed71cadf7d0e40e88c816e assets/twosidesmod/models/item/lemon_seeds.json
+9ebb2d0b254efbb3d37a5ac7a8d2ecac8df043f0 assets/twosidesmod/models/item/life_boots.json
+0d4bd9dbb3d8d229d04529cfe1c99643ac834f57 assets/twosidesmod/models/item/life_chestplate.json
+126202dcb1a15e37a9a9846b5b4715f5ca5a73db assets/twosidesmod/models/item/life_helmet.json
+d6149f79f01fca42b68cf1cd6a67e7f2c90fb681 assets/twosidesmod/models/item/life_horse_armor.json
+a936eb8ecfca87444dd379172ea90378707d1827 assets/twosidesmod/models/item/life_leggings.json
 921c373c8752a3bd04d02cdbdb1d405411aec310 assets/twosidesmod/models/item/metal_detector.json
 024ec46d5b0fc7c6ce8ff5c735b0904904dcce6d assets/twosidesmod/models/item/pure_rose_quartz.json
 af7d187e0dde7182050909b6bcd4e69ff850da5d assets/twosidesmod/models/item/purification_table.json

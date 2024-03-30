@@ -6,7 +6,9 @@ import net.maxitheslime.twosidesmod.entity.ModEntities;
 import net.maxitheslime.twosidesmod.entity.custom.ModBoatEntity;
 import net.maxitheslime.twosidesmod.fluid.ModFluids;
 import net.maxitheslime.twosidesmod.item.custom.*;
+import net.maxitheslime.twosidesmod.item.custom.armor.life.LifeArmorItem;
 import net.maxitheslime.twosidesmod.item.custom.armor.soul.SoulArmorItem;
+import net.maxitheslime.twosidesmod.item.custom.life.*;
 import net.maxitheslime.twosidesmod.item.custom.rosequartz.*;
 import net.maxitheslime.twosidesmod.item.custom.soul.*;
 import net.maxitheslime.twosidesmod.sound.ModSounds;
@@ -168,7 +170,37 @@ public class ModItems {
     public static final RegistryObject<Item> SOUL_HORSE_ARMOR = ITEMS.register("soul_horse_armor",
             () -> new HorseArmorItem(12, new ResourceLocation(TwoSidesMod.MOD_ID, "textures/entity/horse/armor/horse_armor_soul.png"),
                     new Item.Properties()));
-    
+
+    public static final RegistryObject<Item> LIFE_SWORD = ITEMS.register("life_sword",
+            () -> new LBSwordItem(ModToolTiers.ROSE_QUARTZ, 5, 2, new Item.Properties().durability(300)));
+    public static final RegistryObject<Item> LIFE_AXE = ITEMS.register("life_axe",
+            () -> new LBAxeItem(ModToolTiers.ROSE_QUARTZ, 8, 2, new Item.Properties().durability(300)));
+    public static final RegistryObject<Item> LIFE_SHOVEL = ITEMS.register("life_shovel",
+            () -> new LGShovelItem(ModToolTiers.ROSE_QUARTZ, 4, 4, new Item.Properties().durability(300)));
+    public static final RegistryObject<Item> LIFE_HOE = ITEMS.register("life_hoe",
+            () -> new LBHoeItem(ModToolTiers.ROSE_QUARTZ, 3, 2, new Item.Properties().durability(300)));
+    public static final RegistryObject<Item> LIFE_PICKAXE = ITEMS.register("life_pickaxe",
+            () -> new LBPickaxeItem(ModToolTiers.ROSE_QUARTZ, 4, 3, new Item.Properties().durability(300)));
+    public static final RegistryObject<Item> LIFE_PAXEL = ITEMS.register("life_paxel",
+            () -> new LBPaxelItem(ModToolTiers.ROSE_QUARTZ, 4, 2, new Item.Properties().durability(300)));
+    public static final RegistryObject<Item> LIFE_HAMMER = ITEMS.register("life_hammer",
+            () -> new LBHammerItem(ModToolTiers.ROSE_QUARTZ, 9, -2, new Item.Properties().durability(300)));
+    public static final RegistryObject<Item> LIFE_BOW = ITEMS.register("life_bow",
+            () -> new BowItem(new Item.Properties().durability(500)));
+    public static final RegistryObject<Item> LIFE_SHIELD = ITEMS.register("life_shield",
+            () -> new ShieldItem(new Item.Properties().durability(500)));
+    public static final RegistryObject<Item> LIFE_HELMET = ITEMS.register("life_helmet",
+            () -> new LifeArmorItem(ModArmorMaterials.LIFE, ArmorItem.Type.HELMET, new Item.Properties()));
+    public static final RegistryObject<Item> LIFE_CHESTPLATE = ITEMS.register("life_chestplate",
+            () -> new LifeArmorItem(ModArmorMaterials.LIFE, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+    public static final RegistryObject<Item> LIFE_LEGGINGS = ITEMS.register("life_leggings",
+            () -> new LifeArmorItem(ModArmorMaterials.LIFE, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+    public static final RegistryObject<Item> LIFE_BOOTS = ITEMS.register("life_boots",
+            () -> new LifeArmorItem(ModArmorMaterials.LIFE, ArmorItem.Type.BOOTS, new Item.Properties()));
+
+    public static final RegistryObject<Item> LIFE_HORSE_ARMOR = ITEMS.register("life_horse_armor",
+            () -> new HorseArmorItem(12, new ResourceLocation(TwoSidesMod.MOD_ID, "textures/entity/horse/armor/horse_armor_life.png"),
+                    new Item.Properties()));
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }
