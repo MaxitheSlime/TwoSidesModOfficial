@@ -17,6 +17,7 @@ public class ModEffects {
     public static final RegistryObject<MobEffect> SUCTION_EFFECT = MOB_EFFECTS.register("gravitated",
             () -> new SuctionEffect(MobEffectCategory.NEUTRAL, 0x115c58).addAttributeModifier(Attributes.MOVEMENT_SPEED,
                     "7107DE5E-7CE8-4030-940E-514C1F160891", -0.25f, AttributeModifier.Operation.MULTIPLY_TOTAL));
+    
     public static final RegistryObject<MobEffect> SOUL_HARROWING = MOB_EFFECTS.register("soul_harrowed",
             () -> new SoulHarrowEffect(MobEffectCategory.HARMFUL, 0x5800ff)
                     .addAttributeModifier(Attributes.ARMOR_TOUGHNESS,"7107DE5E-7CE8-4030-940E-514C1F160892",
@@ -38,6 +39,19 @@ public class ModEffects {
             () -> new LifeBoostEffect(MobEffectCategory.BENEFICIAL, 0x4169e1)
                     .addAttributeModifier(Attributes.MAX_HEALTH, "7107DE5E-7CE8-4030-940E-514C1F160897",
                             0.33, AttributeModifier.Operation.MULTIPLY_TOTAL));
+
+    public static final RegistryObject<MobEffect> SUPER_STRENGTH = MOB_EFFECTS.register("super_strength",
+            () -> new SuperStrengthEffect(MobEffectCategory.BENEFICIAL, 0x00ff16)
+                    .addAttributeModifier(Attributes.ATTACK_DAMAGE, "7107DE5E-7CE8-4030-940E-514C1F160898",
+                            0.25, AttributeModifier.Operation.MULTIPLY_TOTAL)
+                    .addAttributeModifier(Attributes.ARMOR_TOUGHNESS,"7107DE5E-7CE8-4030-940E-514C1F160899",
+                            0.25, AttributeModifier.Operation.MULTIPLY_TOTAL));
+    public static final RegistryObject<MobEffect> SUPER_STRENGTH_II = MOB_EFFECTS.register("super_strength_ii",
+            () -> new SuperStrengthEffect(MobEffectCategory.BENEFICIAL, 0x00ff16)
+                    .addAttributeModifier(Attributes.ATTACK_DAMAGE, "7107DE5E-7CE8-4030-940E-514C1F160900",
+                            0.45, AttributeModifier.Operation.MULTIPLY_TOTAL)
+                    .addAttributeModifier(Attributes.ARMOR_TOUGHNESS, "7107DE5E-7CE8-4030-940E-514C1F160901",
+                            0.45, AttributeModifier.Operation.MULTIPLY_TOTAL));
 
     public static void register(IEventBus eventBus) {
         MOB_EFFECTS.register(eventBus);

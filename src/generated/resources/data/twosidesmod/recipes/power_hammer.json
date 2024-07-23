@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "twosidesmod:crystal_power_block"
+    },
+    "L": {
+      "item": "twosidesmod:crystal_power_shard"
+    },
+    "P": {
+      "item": "twosidesmod:power_pickaxe"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "BPB",
+    " S ",
+    " L "
+  ],
+  "result": {
+    "item": "twosidesmod:power_hammer"
+  },
+  "show_notification": true
+}

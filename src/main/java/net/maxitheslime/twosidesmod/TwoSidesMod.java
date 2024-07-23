@@ -122,6 +122,8 @@ public class TwoSidesMod {
                 BrewingRecipeRegistry.addRecipe(new BetterBrewingRecipe(ModPotions.SOUL_HARROW_POTION.get(), Items.GLOWSTONE, ModPotions.SOUL_HARROW_II_POTION.get()));
                 BrewingRecipeRegistry.addRecipe(new BetterBrewingRecipe(Potions.HEALING, ModItems.CRYSTAL_LIFE_SHARD.get(), ModPotions.LIFE_BOOST_POTION.get()));
                 BrewingRecipeRegistry.addRecipe(new BetterBrewingRecipe(ModPotions.LIFE_BOOST_POTION.get(), Items.GLOWSTONE, ModPotions.LIFE_BOOST_II_POTION.get()));
+                BrewingRecipeRegistry.addRecipe(new BetterBrewingRecipe(Potions.STRENGTH, ModItems.CRYSTAL_POWER_SHARD.get(), ModPotions.SUPER_STRENGTH_POTION.get()));
+                BrewingRecipeRegistry.addRecipe(new BetterBrewingRecipe(ModPotions.SUPER_STRENGTH_POTION.get(), Items.GLOWSTONE, ModPotions.SUPER_STRENGTH_II_POTION.get()));
 
                 SurfaceRuleManager.addSurfaceRules(SurfaceRuleManager.RuleCategory.OVERWORLD, MOD_ID, ModSurfaceRules.makeRules());
 

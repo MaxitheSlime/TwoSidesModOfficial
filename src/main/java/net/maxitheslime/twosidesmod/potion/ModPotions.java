@@ -23,6 +23,10 @@ public class ModPotions {
             () -> new Potion(new MobEffectInstance(ModEffects.LIFE_BOOST.get(), 600, 0)));
     public static final RegistryObject<Potion> LIFE_BOOST_II_POTION = POTIONS.register("life_boost_ii",
             () -> new Potion(new MobEffectInstance(ModEffects.LIFE_BOOST_II.get(), 600, 0)));
+    public static final RegistryObject<Potion> SUPER_STRENGTH_POTION = POTIONS.register("super_strength",
+            () -> new Potion(new MobEffectInstance(ModEffects.SUPER_STRENGTH.get(), 600, 0)));
+    public static final RegistryObject<Potion> SUPER_STRENGTH_II_POTION = POTIONS.register("super_strength_ii",
+            () -> new Potion(new MobEffectInstance(ModEffects.SUPER_STRENGTH_II.get(), 600, 0)));
 
     public static void register(IEventBus eventBus) {
         POTIONS.register(eventBus);

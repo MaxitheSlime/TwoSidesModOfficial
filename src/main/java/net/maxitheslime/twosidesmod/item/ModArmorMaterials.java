@@ -33,7 +33,13 @@ public enum ModArmorMaterials implements ArmorMaterial {
         p_266655_.put(ArmorItem.Type.LEGGINGS, 6);
         p_266655_.put(ArmorItem.Type.CHESTPLATE, 8);
         p_266655_.put(ArmorItem.Type.HELMET, 6);
-    }), 20, SoundEvents.MOSS_PLACE, 6.67F, 0.1F, () -> Ingredient.of(ModItems.CRYSTAL_LIFE_SHARD.get()))
+    }), 20, SoundEvents.MOSS_PLACE, 6.67F, 0.1F, () -> Ingredient.of(ModItems.CRYSTAL_LIFE_SHARD.get())),
+    POWER("power", 30, Util.make(new EnumMap<>(ArmorItem.Type.class), (p_266655_) -> {
+        p_266655_.put(ArmorItem.Type.BOOTS, 7);
+        p_266655_.put(ArmorItem.Type.LEGGINGS, 7);
+        p_266655_.put(ArmorItem.Type.CHESTPLATE, 7);
+        p_266655_.put(ArmorItem.Type.HELMET, 7);
+    }), 25, SoundEvents.MOSS_PLACE, 7.00F, 0.5F, () -> Ingredient.of(ModItems.CRYSTAL_POWER_SHARD.get()))
     ;
 
 

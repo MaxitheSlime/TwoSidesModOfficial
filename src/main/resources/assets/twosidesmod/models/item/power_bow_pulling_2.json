@@ -1,0 +1,6 @@
+{
+  "parent": "twosidesmod:item/power_bow",
+  "textures": {
+    "layer0": "twosidesmod:item/power_bow_pulling_2"
+  }
+}

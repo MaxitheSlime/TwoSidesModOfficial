@@ -80,7 +80,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.WAXED_RUBY_BLOCK_2.get(),
                         ModBlocks.WAXED_RUBY_BLOCK_3.get(),
                         ModBlocks.PURIFICATION_TABLE.get(),
-                        ModBlocks.CONDUCTIVE_FURNACE.get()/*,
+                        ModBlocks.CONDUCTIVE_FURNACE.get(),
                         ModBlocks.STRENGTH_BLOCK.get(),
                         ModBlocks.IMPURE_STRENGTH_BLOCK.get(),
                         ModBlocks.STRENGTH_ORE.get(),
@@ -122,7 +122,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.SOUL_ORE.get(),
                         ModBlocks.DEEPSLATE_SOUL_ORE.get(),
                         ModBlocks.END_SOUL_ORE.get(),
-                        ModBlocks.NETHER_SOUL_ORE.get()*/
+                        ModBlocks.NETHER_SOUL_ORE.get()
                 );
 
         this.tag(BlockTags.MINEABLE_WITH_AXE)
@@ -174,7 +174,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.ENERGY_FENCE.get(),
                         ModBlocks.ENERGY_FENCE_GATE.get(),
                         ModBlocks.ENERGY_DOOR.get(),
-                        ModBlocks.ENERGY_TRAPDOOR.get()/*,
+                        ModBlocks.ENERGY_TRAPDOOR.get(),
                         ModBlocks.STRENGTH_BLOCK.get(),
                         ModBlocks.IMPURE_STRENGTH_BLOCK.get(),
                         ModBlocks.STRENGTH_ORE.get(),
@@ -216,7 +216,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.SOUL_ORE.get(),
                         ModBlocks.DEEPSLATE_SOUL_ORE.get(),
                         ModBlocks.END_SOUL_ORE.get(),
-                        ModBlocks.NETHER_SOUL_ORE.get()*/
+                        ModBlocks.NETHER_SOUL_ORE.get()
                 );
 
         this.tag(ModTags.Blocks.PAXEL_MINEABLE)

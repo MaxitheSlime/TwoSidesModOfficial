@@ -7,8 +7,10 @@ import net.maxitheslime.twosidesmod.entity.custom.ModBoatEntity;
 import net.maxitheslime.twosidesmod.fluid.ModFluids;
 import net.maxitheslime.twosidesmod.item.custom.*;
 import net.maxitheslime.twosidesmod.item.custom.armor.life.LifeArmorItem;
+import net.maxitheslime.twosidesmod.item.custom.armor.power.PowerArmorItem;
 import net.maxitheslime.twosidesmod.item.custom.armor.soul.SoulArmorItem;
 import net.maxitheslime.twosidesmod.item.custom.life.*;
+import net.maxitheslime.twosidesmod.item.custom.power.*;
 import net.maxitheslime.twosidesmod.item.custom.rosequartz.*;
 import net.maxitheslime.twosidesmod.item.custom.soul.*;
 import net.maxitheslime.twosidesmod.sound.ModSounds;
@@ -176,7 +178,7 @@ public class ModItems {
     public static final RegistryObject<Item> LIFE_AXE = ITEMS.register("life_axe",
             () -> new LBAxeItem(ModToolTiers.ROSE_QUARTZ, 8, 2, new Item.Properties().durability(300)));
     public static final RegistryObject<Item> LIFE_SHOVEL = ITEMS.register("life_shovel",
-            () -> new LGShovelItem(ModToolTiers.ROSE_QUARTZ, 4, 4, new Item.Properties().durability(300)));
+            () -> new LBShovelItem(ModToolTiers.ROSE_QUARTZ, 4, 4, new Item.Properties().durability(300)));
     public static final RegistryObject<Item> LIFE_HOE = ITEMS.register("life_hoe",
             () -> new LBHoeItem(ModToolTiers.ROSE_QUARTZ, 3, 2, new Item.Properties().durability(300)));
     public static final RegistryObject<Item> LIFE_PICKAXE = ITEMS.register("life_pickaxe",
@@ -201,6 +203,38 @@ public class ModItems {
     public static final RegistryObject<Item> LIFE_HORSE_ARMOR = ITEMS.register("life_horse_armor",
             () -> new HorseArmorItem(12, new ResourceLocation(TwoSidesMod.MOD_ID, "textures/entity/horse/armor/horse_armor_life.png"),
                     new Item.Properties()));
+
+    public static final RegistryObject<Item> POWER_SWORD = ITEMS.register("power_sword",
+            () -> new SSSwordItem(ModToolTiers.ROSE_QUARTZ, 5, 2, new Item.Properties().durability(300)));
+    public static final RegistryObject<Item> POWER_AXE = ITEMS.register("power_axe",
+            () -> new SSAxeItem(ModToolTiers.ROSE_QUARTZ, 8, 2, new Item.Properties().durability(300)));
+    public static final RegistryObject<Item> POWER_SHOVEL = ITEMS.register("power_shovel",
+            () -> new SSShovelItem(ModToolTiers.ROSE_QUARTZ, 4, 4, new Item.Properties().durability(300)));
+    public static final RegistryObject<Item> POWER_HOE = ITEMS.register("power_hoe",
+            () -> new SSHoeItem(ModToolTiers.ROSE_QUARTZ, 3, 2, new Item.Properties().durability(300)));
+    public static final RegistryObject<Item> POWER_PICKAXE = ITEMS.register("power_pickaxe",
+            () -> new SSPickaxeItem(ModToolTiers.ROSE_QUARTZ, 4, 3, new Item.Properties().durability(300)));
+    public static final RegistryObject<Item> POWER_PAXEL = ITEMS.register("power_paxel",
+            () -> new SSPaxelItem(ModToolTiers.ROSE_QUARTZ, 4, 2, new Item.Properties().durability(300)));
+    public static final RegistryObject<Item> POWER_HAMMER = ITEMS.register("power_hammer",
+            () -> new SSHammerItem(ModToolTiers.ROSE_QUARTZ, 9, -2, new Item.Properties().durability(300)));
+    public static final RegistryObject<Item> POWER_BOW = ITEMS.register("power_bow",
+            () -> new BowItem(new Item.Properties().durability(500)));
+    public static final RegistryObject<Item> POWER_SHIELD = ITEMS.register("power_shield",
+            () -> new ShieldItem(new Item.Properties().durability(500)));
+    public static final RegistryObject<Item> POWER_HELMET = ITEMS.register("power_helmet",
+            () -> new PowerArmorItem(ModArmorMaterials.POWER, ArmorItem.Type.HELMET, new Item.Properties()));
+    public static final RegistryObject<Item> POWER_CHESTPLATE = ITEMS.register("power_chestplate",
+            () -> new PowerArmorItem(ModArmorMaterials.POWER, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+    public static final RegistryObject<Item> POWER_LEGGINGS = ITEMS.register("power_leggings",
+            () -> new PowerArmorItem(ModArmorMaterials.POWER, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+    public static final RegistryObject<Item> POWER_BOOTS = ITEMS.register("power_boots",
+            () -> new PowerArmorItem(ModArmorMaterials.POWER, ArmorItem.Type.BOOTS, new Item.Properties()));
+
+    public static final RegistryObject<Item> POWER_HORSE_ARMOR = ITEMS.register("power_horse_armor",
+            () -> new HorseArmorItem(12, new ResourceLocation(TwoSidesMod.MOD_ID, "textures/entity/horse/armor/horse_armor_power.png"),
+                    new Item.Properties()));
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

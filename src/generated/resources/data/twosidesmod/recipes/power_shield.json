@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:iron_block"
+    },
+    "G": {
+      "item": "minecraft:green_stained_glass_pane"
+    },
+    "L": {
+      "item": "twosidesmod:crystal_power_shard"
+    }
+  },
+  "pattern": [
+    "BBB",
+    "BGB",
+    "BLB"
+  ],
+  "result": {
+    "item": "twosidesmod:power_shield"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "twosidesmod:power_axe"
+    },
+    "L": {
+      "item": "minecraft:stick"
+    },
+    "P": {
+      "item": "twosidesmod:power_pickaxe"
+    },
+    "S": {
+      "item": "twosidesmod:power_shovel"
+    }
+  },
+  "pattern": [
+    " P ",
+    "ALS",
+    " L "
+  ],
+  "result": {
+    "item": "twosidesmod:power_paxel"
+  },
+  "show_notification": true
+}

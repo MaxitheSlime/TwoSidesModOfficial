@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "L": {
+      "item": "twosidesmod:crystal_power_shard"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "LLL",
+    "LLL",
+    " S "
+  ],
+  "result": {
+    "item": "twosidesmod:power_sword"
+  },
+  "show_notification": true
+}

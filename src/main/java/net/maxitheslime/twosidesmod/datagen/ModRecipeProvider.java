@@ -983,6 +983,134 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_soul_horse_armor", inventoryTrigger(ItemPredicate.Builder.item().
                         of(ModItems.SOUL_HORSE_ARMOR.get()).build()))
                 .save(pWriter);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.POWER_SWORD.get())
+                .pattern("LLL")
+                .pattern("LLL")
+                .pattern(" S ")
+                .define('L', ModItems.CRYSTAL_POWER_SHARD.get())
+                .define('S', Items.STICK)
+                .unlockedBy("has_crystal_power_shard", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(ModItems.CRYSTAL_POWER_SHARD.get()).build()))
+                .save(pWriter);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.POWER_AXE.get())
+                .pattern("LLL")
+                .pattern(" S ")
+                .pattern(" S ")
+                .define('L', ModItems.CRYSTAL_POWER_SHARD.get())
+                .define('S', Items.STICK)
+                .unlockedBy("has_crystal_power_shard", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(ModItems.CRYSTAL_POWER_SHARD.get()).build()))
+                .save(pWriter);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.POWER_SHOVEL.get())
+                .pattern("LLL")
+                .pattern(" S ")
+                .pattern(" S ")
+                .define('L', ModItems.CRYSTAL_POWER_SHARD.get())
+                .define('S', Items.STICK)
+                .unlockedBy("has_crystal_power_shard", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(ModItems.CRYSTAL_POWER_SHARD.get()).build()))
+                .save(pWriter);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.POWER_HOE.get())
+                .pattern("SSS")
+                .pattern("LLL")
+                .pattern(" S ")
+                .define('L', ModItems.CRYSTAL_POWER_SHARD.get())
+                .define('S', Items.STICK)
+                .unlockedBy("has_crystal_power_shard", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(ModItems.CRYSTAL_POWER_SHARD.get()).build()))
+                .save(pWriter);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.POWER_PICKAXE.get())
+                .pattern("LLL")
+                .pattern("LS ")
+                .pattern(" S ")
+                .define('L', ModItems.CRYSTAL_POWER_SHARD.get())
+                .define('S', Items.STICK)
+                .unlockedBy("has_crystal_power_shard", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(ModItems.CRYSTAL_POWER_SHARD.get()).build()))
+                .save(pWriter);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.POWER_HAMMER.get())
+                .pattern("BPB")
+                .pattern(" S ")
+                .pattern(" L ")
+                .define('L', ModItems.CRYSTAL_POWER_SHARD.get())
+                .define('P', ModItems.POWER_PICKAXE.get())
+                .define('B', ModBlocks.POWER_BLOCK.get())
+                .define('S', Items.STICK)
+                .unlockedBy("has_crystal_power_shard", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(ModItems.CRYSTAL_POWER_SHARD.get()).build()))
+                .save(pWriter);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.POWER_PAXEL.get())
+                .pattern(" P ")
+                .pattern("ALS")
+                .pattern(" L ")
+                .define('L', Items.STICK)
+                .define('S', ModItems.POWER_SHOVEL.get())
+                .define('P', ModItems.POWER_PICKAXE.get())
+                .define('A', ModItems.POWER_AXE.get())
+                .unlockedBy("has_crystal_power_shard", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(ModItems.CRYSTAL_POWER_SHARD.get()).build()))
+                .save(pWriter);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.POWER_BOW.get())
+                .pattern(" LS")
+                .pattern("L S")
+                .pattern(" LS")
+                .define('L', ModItems.CRYSTAL_POWER_SHARD.get())
+                .define('S', Items.STRING)
+                .unlockedBy("has_crystal_power_shard", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(ModItems.CRYSTAL_POWER_SHARD.get()).build()))
+                .save(pWriter);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.POWER_SHIELD.get())
+                .pattern("BBB")
+                .pattern("BGB")
+                .pattern("BLB")
+                .define('L', ModItems.CRYSTAL_POWER_SHARD.get())
+                .define('G', Items.GREEN_STAINED_GLASS_PANE)
+                .define('B', Items.IRON_BLOCK)
+                .unlockedBy("has_crystal_power_shard", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(ModItems.CRYSTAL_POWER_SHARD.get()).build()))
+                .save(pWriter);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.POWER_HELMET.get())
+                .pattern("LLL")
+                .pattern("L L")
+                .pattern("   ")
+                .define('L', ModItems.CRYSTAL_POWER_SHARD.get())
+                .unlockedBy("has_crystal_power_shard", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(ModItems.CRYSTAL_POWER_SHARD.get()).build()))
+                .save(pWriter);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.POWER_CHESTPLATE.get())
+                .pattern("L L")
+                .pattern("LLL")
+                .pattern("LLL")
+                .define('L', ModItems.CRYSTAL_POWER_SHARD.get())
+                .unlockedBy("has_crystal_power_shard", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(ModItems.CRYSTAL_POWER_SHARD.get()).build()))
+                .save(pWriter);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.POWER_LEGGINGS.get())
+                .pattern("LLL")
+                .pattern("L L")
+                .pattern("L L")
+                .define('L', ModItems.CRYSTAL_POWER_SHARD.get())
+                .unlockedBy("has_crystal_power_shard", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(ModItems.CRYSTAL_POWER_SHARD.get()).build()))
+                .save(pWriter);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.POWER_BOOTS.get())
+                .pattern("L L")
+                .pattern("L L")
+                .pattern("   ")
+                .define('L', ModItems.CRYSTAL_POWER_SHARD.get())
+                .unlockedBy("has_crystal_power_shard", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(ModItems.CRYSTAL_POWER_SHARD.get()).build()))
+                .save(pWriter);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.POWER_HORSE_ARMOR.get())
+                .pattern(" LR")
+                .pattern("BRB")
+                .pattern("BBB")
+                .define('R', ModItems.CRYSTAL_POWER_SHARD.get())
+                .define('B', Items.IRON_INGOT)
+                .define('L', Items.LEAD)
+                .unlockedBy("has_soul_horse_armor", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(ModItems.SOUL_HORSE_ARMOR.get()).build()))
+                .save(pWriter);
 
         nineBlockStorageRecipes(pWriter, RecipeCategory.MISC, ModItems.IMPURE_ROSE_QUARTZ.get(), RecipeCategory.MISC, ModBlocks.IMPURE_ROSE_QUARTZ_BLOCK.get(),
                 "twosidesmod:impure_rose_quartz", "pure_rose_quartz", "twosidesmod:impure_rose_quartz_block", "pure_rose_quartz");
