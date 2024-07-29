@@ -53,6 +53,34 @@ public class ModEffects {
                     .addAttributeModifier(Attributes.ARMOR_TOUGHNESS, "7107DE5E-7CE8-4030-940E-514C1F160901",
                             0.45, AttributeModifier.Operation.MULTIPLY_TOTAL));
 
+    public static final RegistryObject<MobEffect> FIRE_FISTS = MOB_EFFECTS.register("fire_fists",
+            () -> new FireFistsEffect(MobEffectCategory.BENEFICIAL, 0xff8e00)
+                    .addAttributeModifier(Attributes.ATTACK_DAMAGE, "7107DE5E-7CE8-4030-940E-514C1F160902",
+                            0.2, AttributeModifier.Operation.MULTIPLY_TOTAL));
+    public static final RegistryObject<MobEffect> FIRE_FISTS_II = MOB_EFFECTS.register("fire_fists_ii",
+            () -> new FireFistsEffect(MobEffectCategory.BENEFICIAL, 0xff8e00)
+                    .addAttributeModifier(Attributes.ATTACK_DAMAGE, "7107DE5E-7CE8-4030-940E-514C1F160903",
+                            0.4, AttributeModifier.Operation.MULTIPLY_TOTAL));
+
+    public static final RegistryObject<MobEffect> CONDUIT_BLESSING = MOB_EFFECTS.register("conduit_blessing",
+            () -> new ConduitsBlessingEffect(MobEffectCategory.BENEFICIAL, 0x009f88));
+    public static final RegistryObject<MobEffect> CONDUIT_BLESSING_II = MOB_EFFECTS.register("conduit_blessing_ii",
+            () -> new ConduitsBlessingEffect(MobEffectCategory.BENEFICIAL, 0x009f88));
+
+    public static final RegistryObject<MobEffect> WINGED_FEET = MOB_EFFECTS.register("winged_feet",
+            () -> new WingedFeetEffect(MobEffectCategory.BENEFICIAL, 0xb1b1b1));
+    public static final RegistryObject<MobEffect> WINGED_FEET_II = MOB_EFFECTS.register("winged_feet_ii",
+            () -> new WingedFeetEffect(MobEffectCategory.BENEFICIAL, 0xb1b1b1));
+
+    public static final RegistryObject<MobEffect> ROCK_TOMB = MOB_EFFECTS.register("rock_tomb",
+            () -> new RockTombEffect(MobEffectCategory.BENEFICIAL, 0x312508)
+                    .addAttributeModifier(Attributes.ARMOR,"7107DE5E-7CE8-4030-940E-514C1F160904",
+                            0.5, AttributeModifier.Operation.MULTIPLY_TOTAL));
+    public static final RegistryObject<MobEffect> ROCK_TOMB_II = MOB_EFFECTS.register("rock_tomb_ii",
+            () -> new RockTombEffect(MobEffectCategory.BENEFICIAL, 0x312508)
+                    .addAttributeModifier(Attributes.ARMOR,"7107DE5E-7CE8-4030-940E-514C1F160905",
+                            0.5, AttributeModifier.Operation.MULTIPLY_TOTAL));
+
     public static void register(IEventBus eventBus) {
         MOB_EFFECTS.register(eventBus);
     }

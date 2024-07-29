@@ -124,6 +124,14 @@ public class TwoSidesMod {
                 BrewingRecipeRegistry.addRecipe(new BetterBrewingRecipe(ModPotions.LIFE_BOOST_POTION.get(), Items.GLOWSTONE, ModPotions.LIFE_BOOST_II_POTION.get()));
                 BrewingRecipeRegistry.addRecipe(new BetterBrewingRecipe(Potions.STRENGTH, ModItems.CRYSTAL_POWER_SHARD.get(), ModPotions.SUPER_STRENGTH_POTION.get()));
                 BrewingRecipeRegistry.addRecipe(new BetterBrewingRecipe(ModPotions.SUPER_STRENGTH_POTION.get(), Items.GLOWSTONE, ModPotions.SUPER_STRENGTH_II_POTION.get()));
+                BrewingRecipeRegistry.addRecipe(new BetterBrewingRecipe(Potions.FIRE_RESISTANCE, ModItems.CRYSTAL_CONTROL_SHARD.get(), ModPotions.FIRE_FISTS_POTION.get()));
+                BrewingRecipeRegistry.addRecipe(new BetterBrewingRecipe(ModPotions.FIRE_FISTS_POTION.get(), Items.GLOWSTONE, ModPotions.FIRE_FISTS_II_POTION.get()));
+                BrewingRecipeRegistry.addRecipe(new BetterBrewingRecipe(Potions.WATER_BREATHING, ModItems.CRYSTAL_CONTROL_SHARD.get(), ModPotions.CONDUIT_BLESSING_POTION.get()));
+                BrewingRecipeRegistry.addRecipe(new BetterBrewingRecipe(ModPotions.CONDUIT_BLESSING_POTION.get(), Items.GLOWSTONE, ModPotions.CONDUIT_BLESSING_II_POTION.get()));
+                BrewingRecipeRegistry.addRecipe(new BetterBrewingRecipe(Potions.LEAPING, ModItems.CRYSTAL_CONTROL_SHARD.get(), ModPotions.WINGED_FEET_POTION.get()));
+                BrewingRecipeRegistry.addRecipe(new BetterBrewingRecipe(ModPotions.WINGED_FEET_POTION.get(), Items.GLOWSTONE, ModPotions.WINGED_FEET_II_POTION.get()));
+                BrewingRecipeRegistry.addRecipe(new BetterBrewingRecipe(Potions.TURTLE_MASTER, ModItems.CRYSTAL_CONTROL_SHARD.get(), ModPotions.ROCK_TOMB_POTION.get()));
+                BrewingRecipeRegistry.addRecipe(new BetterBrewingRecipe(ModPotions.ROCK_TOMB_POTION.get(), Items.GLOWSTONE, ModPotions.ROCK_TOMB_II_POTION.get()));
 
                 SurfaceRuleManager.addSurfaceRules(SurfaceRuleManager.RuleCategory.OVERWORLD, MOD_ID, ModSurfaceRules.makeRules());
 

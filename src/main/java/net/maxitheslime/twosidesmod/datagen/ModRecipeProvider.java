@@ -8,10 +8,12 @@ import net.maxitheslime.twosidesmod.item.ModItems;
 import net.minecraft.advancements.critereon.ItemPredicate;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.AbstractCookingRecipe;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.RecipeSerializer;
+import net.minecraft.world.item.crafting.SmithingTransformRecipe;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.material.Fluids;
@@ -1111,7 +1113,131 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_soul_horse_armor", inventoryTrigger(ItemPredicate.Builder.item().
                         of(ModItems.SOUL_HORSE_ARMOR.get()).build()))
                 .save(pWriter);
-
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.CONTROL_SWORD.get())
+                .pattern(" L ")
+                .pattern(" L ")
+                .pattern(" S ")
+                .define('L', ModItems.CRYSTAL_CONTROL_SHARD.get())
+                .define('S', Items.STICK)
+                .unlockedBy("has_crystal_control_shard", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(ModItems.CRYSTAL_CONTROL_SHARD.get()).build()))
+                .save(pWriter);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.CONTROL_AXE.get())
+                .pattern("LL ")
+                .pattern("LS ")
+                .pattern(" S ")
+                .define('L', ModItems.CRYSTAL_CONTROL_SHARD.get())
+                .define('S', Items.STICK)
+                .unlockedBy("has_crystal_control_shard", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(ModItems.CRYSTAL_CONTROL_SHARD.get()).build()))
+                .save(pWriter);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.CONTROL_SHOVEL.get())
+                .pattern(" L ")
+                .pattern(" S ")
+                .pattern(" S ")
+                .define('L', ModItems.CRYSTAL_CONTROL_SHARD.get())
+                .define('S', Items.STICK)
+                .unlockedBy("has_crystal_control_shard", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(ModItems.CRYSTAL_CONTROL_SHARD.get()).build()))
+                .save(pWriter);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.CONTROL_HOE.get())
+                .pattern("LL ")
+                .pattern(" S ")
+                .pattern(" S ")
+                .define('L', ModItems.CRYSTAL_CONTROL_SHARD.get())
+                .define('S', Items.STICK)
+                .unlockedBy("has_crystal_control_shard", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(ModItems.CRYSTAL_CONTROL_SHARD.get()).build()))
+                .save(pWriter);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.CONTROL_PICKAXE.get())
+                .pattern("LLL")
+                .pattern(" S ")
+                .pattern(" S ")
+                .define('L', ModItems.CRYSTAL_CONTROL_SHARD.get())
+                .define('S', Items.STICK)
+                .unlockedBy("has_crystal_control_shard", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(ModItems.CRYSTAL_CONTROL_SHARD.get()).build()))
+                .save(pWriter);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.CONTROL_HAMMER.get())
+                .pattern("PPP")
+                .pattern(" S ")
+                .pattern(" S ")
+                .define('P', ModItems.CONTROL_PICKAXE.get())
+                .define('S', Items.STICK)
+                .unlockedBy("has_crystal_control_shard", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(ModItems.CRYSTAL_CONTROL_SHARD.get()).build()))
+                .save(pWriter);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.CONTROL_PAXEL.get())
+                .pattern(" P ")
+                .pattern("ALS")
+                .pattern(" L ")
+                .define('L', Items.STICK)
+                .define('S', ModItems.CONTROL_SHOVEL.get())
+                .define('P', ModItems.CONTROL_PICKAXE.get())
+                .define('A', ModItems.CONTROL_AXE.get())
+                .unlockedBy("has_crystal_control_shard", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(ModItems.CRYSTAL_CONTROL_SHARD.get()).build()))
+                .save(pWriter);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.CONTROL_BOW.get())
+                .pattern(" LS")
+                .pattern("L S")
+                .pattern(" LS")
+                .define('L', ModItems.CRYSTAL_CONTROL_SHARD.get())
+                .define('S', Items.STRING)
+                .unlockedBy("has_crystal_control_shard", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(ModItems.CRYSTAL_CONTROL_SHARD.get()).build()))
+                .save(pWriter);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.CONTROL_SHIELD.get())
+                .pattern("LLL")
+                .pattern("LLL")
+                .pattern(" L ")
+                .define('L', ModItems.CRYSTAL_CONTROL_SHARD.get())
+                .unlockedBy("has_crystal_control_shard", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(ModItems.CRYSTAL_CONTROL_SHARD.get()).build()))
+                .save(pWriter);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.CONTROL_HELMET_TEMPLATE.get())
+                .pattern("LLL")
+                .pattern("L L")
+                .pattern("   ")
+                .define('L', ModItems.CRYSTAL_CONTROL_SHARD.get())
+                .unlockedBy("has_crystal_control_shard", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(ModItems.CRYSTAL_CONTROL_SHARD.get()).build()))
+                .save(pWriter);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.CONTROL_CHESTPLATE_TEMPLATE.get())
+                .pattern("L L")
+                .pattern("LLL")
+                .pattern("LLL")
+                .define('L', ModItems.CRYSTAL_CONTROL_SHARD.get())
+                .unlockedBy("has_crystal_control_shard", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(ModItems.CRYSTAL_CONTROL_SHARD.get()).build()))
+                .save(pWriter);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.CONTROL_LEGGINGS_TEMPLATE.get())
+                .pattern("LLL")
+                .pattern("L L")
+                .pattern("L L")
+                .define('L', ModItems.CRYSTAL_CONTROL_SHARD.get())
+                .unlockedBy("has_crystal_control_shard", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(ModItems.CRYSTAL_CONTROL_SHARD.get()).build()))
+                .save(pWriter);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.CONTROL_BOOTS_TEMPLATE.get())
+                .pattern("L L")
+                .pattern("L L")
+                .pattern("   ")
+                .define('L', ModItems.CRYSTAL_CONTROL_SHARD.get())
+                .unlockedBy("has_crystal_control_shard", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(ModItems.CRYSTAL_CONTROL_SHARD.get()).build()))
+                .save(pWriter);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.CONTROL_HORSE_ARMOR.get())
+                .pattern(" LR")
+                .pattern("BRB")
+                .pattern("BBB")
+                .define('R', ModItems.CRYSTAL_CONTROL_SHARD.get())
+                .define('B', Items.IRON_INGOT)
+                .define('L', Items.LEAD)
+                .unlockedBy("has_soul_horse_armor", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(ModItems.SOUL_HORSE_ARMOR.get()).build()))
+                .save(pWriter);
+        
         nineBlockStorageRecipes(pWriter, RecipeCategory.MISC, ModItems.IMPURE_ROSE_QUARTZ.get(), RecipeCategory.MISC, ModBlocks.IMPURE_ROSE_QUARTZ_BLOCK.get(),
                 "twosidesmod:impure_rose_quartz", "pure_rose_quartz", "twosidesmod:impure_rose_quartz_block", "pure_rose_quartz");
         nineBlockStorageRecipes(pWriter, RecipeCategory.MISC, ModItems.IMPURE_CRYSTAL_STRENGTH_SHARD.get(), RecipeCategory.MISC, ModBlocks.IMPURE_STRENGTH_BLOCK.get(),
@@ -1198,5 +1324,6 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                     .save(pFinishedRecipeConsumer, TwoSidesMod.MOD_ID + ":" + getItemName(pResult) + pRecipeName + "_" + getItemName(itemlike));
         }
     }
+
 }
 

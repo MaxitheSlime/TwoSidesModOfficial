@@ -1,0 +1,6 @@
+{
+  "parent": "twosidesmod:item/control_bow",
+  "textures": {
+    "layer0": "twosidesmod:item/control_bow_pulling_0"
+  }
+}

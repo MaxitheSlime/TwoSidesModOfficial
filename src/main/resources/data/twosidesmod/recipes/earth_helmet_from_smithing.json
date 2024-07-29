@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "category": "misc",
+  "addition": {
+    "item": "minecraft:cobblestone"
+  },
+  "base": {
+    "item": "twosidesmod:crystal_control_shard"
+  },
+  "result": {
+    "item": "twosidesmod:earth_helmet"
+  },
+  "template": {
+    "item": "twosidesmod:control_helmet_template"
+  }
+}

@@ -38,6 +38,10 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.IMPURE_CRYSTAL_LIFE_SHARD.get());
                         pOutput.accept(ModItems.CRYSTAL_SOUL_SHARD.get());
                         pOutput.accept(ModItems.IMPURE_CRYSTAL_SOUL_SHARD.get());
+                        pOutput.accept(ModItems.CONTROL_HELMET_TEMPLATE.get());
+                        pOutput.accept(ModItems.CONTROL_CHESTPLATE_TEMPLATE.get());
+                        pOutput.accept(ModItems.CONTROL_LEGGINGS_TEMPLATE.get());
+                        pOutput.accept(ModItems.CONTROL_BOOTS_TEMPLATE.get());
                     }).build());
     public static final RegistryObject<CreativeModeTab> TWO_SIDES_TOOLS = CREATIVE_MODE_TABS.register("two_sides_tools",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.METAL_DETECTOR.get())).
@@ -104,6 +108,32 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.POWER_SHIELD.get());
                         pOutput.accept(ModItems.POWER_HORSE_ARMOR.get());
 
+                        pOutput.accept(ModItems.CONTROL_SWORD.get());
+                        pOutput.accept(ModItems.CONTROL_PICKAXE.get());
+                        pOutput.accept(ModItems.CONTROL_SHOVEL.get());
+                        pOutput.accept(ModItems.CONTROL_AXE.get());
+                        pOutput.accept(ModItems.CONTROL_HOE.get());
+                        pOutput.accept(ModItems.CONTROL_PAXEL.get());
+                        pOutput.accept(ModItems.CONTROL_HAMMER.get());
+                        pOutput.accept(ModItems.CONTROL_BOW.get());
+                        pOutput.accept(ModItems.FIRE_HELMET.get());
+                        pOutput.accept(ModItems.FIRE_CHESTPLATE.get());
+                        pOutput.accept(ModItems.FIRE_LEGGINGS.get());
+                        pOutput.accept(ModItems.FIRE_BOOTS.get());
+                        pOutput.accept(ModItems.WATER_HELMET.get());
+                        pOutput.accept(ModItems.WATER_CHESTPLATE.get());
+                        pOutput.accept(ModItems.WATER_LEGGINGS.get());
+                        pOutput.accept(ModItems.WATER_BOOTS.get());
+                        pOutput.accept(ModItems.EARTH_HELMET.get());
+                        pOutput.accept(ModItems.EARTH_CHESTPLATE.get());
+                        pOutput.accept(ModItems.EARTH_LEGGINGS.get());
+                        pOutput.accept(ModItems.EARTH_BOOTS.get());
+                        pOutput.accept(ModItems.AIR_HELMET.get());
+                        pOutput.accept(ModItems.AIR_CHESTPLATE.get());
+                        pOutput.accept(ModItems.AIR_LEGGINGS.get());
+                        pOutput.accept(ModItems.AIR_BOOTS.get());
+                        pOutput.accept(ModItems.CONTROL_SHIELD.get());
+                        pOutput.accept(ModItems.CONTROL_HORSE_ARMOR.get());
 
                         pOutput.accept(ModItems.REMOTE_CONTROL.get());
 

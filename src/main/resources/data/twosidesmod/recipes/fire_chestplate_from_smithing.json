@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "category": "misc",
+  "addition": {
+    "item": "minecraft:magma_cream"
+  },
+  "base": {
+    "item": "twosidesmod:crystal_control_shard"
+  },
+  "result": {
+    "item": "twosidesmod:fire_chestplate"
+  },
+  "template": {
+    "item": "twosidesmod:control_chestplate_template"
+  }
+}

@@ -6,9 +6,14 @@ import net.maxitheslime.twosidesmod.entity.ModEntities;
 import net.maxitheslime.twosidesmod.entity.custom.ModBoatEntity;
 import net.maxitheslime.twosidesmod.fluid.ModFluids;
 import net.maxitheslime.twosidesmod.item.custom.*;
+import net.maxitheslime.twosidesmod.item.custom.armor.control.AirArmorItem;
+import net.maxitheslime.twosidesmod.item.custom.armor.control.EarthArmorItem;
+import net.maxitheslime.twosidesmod.item.custom.armor.control.FireArmorItem;
+import net.maxitheslime.twosidesmod.item.custom.armor.control.WaterArmorItem;
 import net.maxitheslime.twosidesmod.item.custom.armor.life.LifeArmorItem;
 import net.maxitheslime.twosidesmod.item.custom.armor.power.PowerArmorItem;
 import net.maxitheslime.twosidesmod.item.custom.armor.soul.SoulArmorItem;
+import net.maxitheslime.twosidesmod.item.custom.control.*;
 import net.maxitheslime.twosidesmod.item.custom.life.*;
 import net.maxitheslime.twosidesmod.item.custom.power.*;
 import net.maxitheslime.twosidesmod.item.custom.rosequartz.*;
@@ -233,6 +238,69 @@ public class ModItems {
 
     public static final RegistryObject<Item> POWER_HORSE_ARMOR = ITEMS.register("power_horse_armor",
             () -> new HorseArmorItem(12, new ResourceLocation(TwoSidesMod.MOD_ID, "textures/entity/horse/armor/horse_armor_power.png"),
+                    new Item.Properties()));
+
+    public static final RegistryObject<Item> CONTROL_HELMET_TEMPLATE = ITEMS.register("control_helmet_template",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CONTROL_CHESTPLATE_TEMPLATE = ITEMS.register("control_chestplate_template",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CONTROL_LEGGINGS_TEMPLATE = ITEMS.register("control_leggings_template",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CONTROL_BOOTS_TEMPLATE = ITEMS.register("control_boots_template",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CONTROL_SWORD = ITEMS.register("control_sword",
+            () -> new ElementalSwordItem(ModToolTiers.ROSE_QUARTZ, 5, 2, new Item.Properties().durability(300)));
+    public static final RegistryObject<Item> CONTROL_AXE = ITEMS.register("control_axe",
+            () -> new ElementalAxeItem(ModToolTiers.ROSE_QUARTZ, 8, 2, new Item.Properties().durability(300)));
+    public static final RegistryObject<Item> CONTROL_SHOVEL = ITEMS.register("control_shovel",
+            () -> new ElementalShovelItem(ModToolTiers.ROSE_QUARTZ, 4, 4, new Item.Properties().durability(300)));
+    public static final RegistryObject<Item> CONTROL_HOE = ITEMS.register("control_hoe",
+            () -> new ElementalHoeItem(ModToolTiers.ROSE_QUARTZ, 3, 2, new Item.Properties().durability(300)));
+    public static final RegistryObject<Item> CONTROL_PICKAXE = ITEMS.register("control_pickaxe",
+            () -> new ElementalPickaxeItem(ModToolTiers.ROSE_QUARTZ, 4, 3, new Item.Properties().durability(300)));
+    public static final RegistryObject<Item> CONTROL_PAXEL = ITEMS.register("control_paxel",
+            () -> new ElementalPaxelItem(ModToolTiers.ROSE_QUARTZ, 4, 2, new Item.Properties().durability(300)));
+    public static final RegistryObject<Item> CONTROL_HAMMER = ITEMS.register("control_hammer",
+            () -> new ElementalHammerItem(ModToolTiers.ROSE_QUARTZ, 9, -2, new Item.Properties().durability(300)));
+    public static final RegistryObject<Item> CONTROL_BOW = ITEMS.register("control_bow",
+            () -> new BowItem(new Item.Properties().durability(500)));
+    public static final RegistryObject<Item> CONTROL_SHIELD = ITEMS.register("control_shield",
+            () -> new ShieldItem(new Item.Properties().durability(500)));
+    public static final RegistryObject<Item> FIRE_HELMET = ITEMS.register("fire_helmet",
+            () -> new FireArmorItem(ModArmorMaterials.CONTROL_FIRE, ArmorItem.Type.HELMET, new Item.Properties()));
+    public static final RegistryObject<Item> FIRE_CHESTPLATE = ITEMS.register("fire_chestplate",
+            () -> new FireArmorItem(ModArmorMaterials.CONTROL_FIRE, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+    public static final RegistryObject<Item> FIRE_LEGGINGS = ITEMS.register("fire_leggings",
+            () -> new FireArmorItem(ModArmorMaterials.CONTROL_FIRE, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+    public static final RegistryObject<Item> FIRE_BOOTS = ITEMS.register("fire_boots",
+            () -> new FireArmorItem(ModArmorMaterials.CONTROL_FIRE, ArmorItem.Type.BOOTS, new Item.Properties()));
+    public static final RegistryObject<Item> WATER_HELMET = ITEMS.register("water_helmet",
+            () -> new WaterArmorItem(ModArmorMaterials.CONTROL_WATER, ArmorItem.Type.HELMET, new Item.Properties()));
+    public static final RegistryObject<Item> WATER_CHESTPLATE = ITEMS.register("water_chestplate",
+            () -> new WaterArmorItem(ModArmorMaterials.CONTROL_WATER, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+    public static final RegistryObject<Item> WATER_LEGGINGS = ITEMS.register("water_leggings",
+            () -> new WaterArmorItem(ModArmorMaterials.CONTROL_WATER, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+    public static final RegistryObject<Item> WATER_BOOTS = ITEMS.register("water_boots",
+            () -> new WaterArmorItem(ModArmorMaterials.CONTROL_WATER, ArmorItem.Type.BOOTS, new Item.Properties()));
+    public static final RegistryObject<Item> AIR_HELMET = ITEMS.register("air_helmet",
+            () -> new AirArmorItem(ModArmorMaterials.CONTROL_AIR, ArmorItem.Type.HELMET, new Item.Properties()));
+    public static final RegistryObject<Item> AIR_CHESTPLATE = ITEMS.register("air_chestplate",
+            () -> new AirArmorItem(ModArmorMaterials.CONTROL_AIR, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+    public static final RegistryObject<Item> AIR_LEGGINGS = ITEMS.register("air_leggings",
+            () -> new AirArmorItem(ModArmorMaterials.CONTROL_AIR, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+    public static final RegistryObject<Item> AIR_BOOTS = ITEMS.register("air_boots",
+            () -> new AirArmorItem(ModArmorMaterials.CONTROL_AIR, ArmorItem.Type.BOOTS, new Item.Properties()));
+    public static final RegistryObject<Item> EARTH_HELMET = ITEMS.register("earth_helmet",
+            () -> new EarthArmorItem(ModArmorMaterials.CONTROL_EARTH, ArmorItem.Type.HELMET, new Item.Properties()));
+    public static final RegistryObject<Item> EARTH_CHESTPLATE = ITEMS.register("earth_chestplate",
+            () -> new EarthArmorItem(ModArmorMaterials.CONTROL_EARTH, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+    public static final RegistryObject<Item> EARTH_LEGGINGS = ITEMS.register("earth_leggings",
+            () -> new EarthArmorItem(ModArmorMaterials.CONTROL_EARTH, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+    public static final RegistryObject<Item> EARTH_BOOTS = ITEMS.register("earth_boots",
+            () -> new EarthArmorItem(ModArmorMaterials.CONTROL_EARTH, ArmorItem.Type.BOOTS, new Item.Properties()));
+
+    public static final RegistryObject<Item> CONTROL_HORSE_ARMOR = ITEMS.register("control_horse_armor",
+            () -> new HorseArmorItem(12, new ResourceLocation(TwoSidesMod.MOD_ID, "textures/entity/horse/armor/horse_armor_control.png"),
                     new Item.Properties()));
 
     public static void register(IEventBus eventBus) {

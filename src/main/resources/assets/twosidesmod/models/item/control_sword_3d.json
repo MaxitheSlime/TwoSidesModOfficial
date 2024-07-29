@@ -2,8 +2,8 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [64, 64],
 	"textures": {
-		"0": "twosidesmod:item/shift_sword_3d",
-		"particle": "twosidesmod:item/shift_sword_3d"
+		"0": "twosidesmod:item/control_sword_3d",
+		"particle": "twosidesmod:item/control_sword_3d"
 	},
 	"elements": [
 		{

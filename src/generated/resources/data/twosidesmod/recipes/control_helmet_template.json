@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "L": {
+      "item": "twosidesmod:crystal_control_shard"
+    }
+  },
+  "pattern": [
+    "LLL",
+    "L L",
+    "   "
+  ],
+  "result": {
+    "item": "twosidesmod:control_helmet_template"
+  },
+  "show_notification": true
+}

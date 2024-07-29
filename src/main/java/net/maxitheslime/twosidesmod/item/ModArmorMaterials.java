@@ -39,7 +39,31 @@ public enum ModArmorMaterials implements ArmorMaterial {
         p_266655_.put(ArmorItem.Type.LEGGINGS, 7);
         p_266655_.put(ArmorItem.Type.CHESTPLATE, 7);
         p_266655_.put(ArmorItem.Type.HELMET, 7);
-    }), 25, SoundEvents.MOSS_PLACE, 7.00F, 0.5F, () -> Ingredient.of(ModItems.CRYSTAL_POWER_SHARD.get()))
+    }), 25, SoundEvents.IRON_GOLEM_HURT, 7.00F, 0.5F, () -> Ingredient.of(ModItems.CRYSTAL_POWER_SHARD.get())),
+    CONTROL_FIRE("fire", 30, Util.make(new EnumMap<>(ArmorItem.Type.class), (p_266655_) -> {
+        p_266655_.put(ArmorItem.Type.BOOTS, 6);
+        p_266655_.put(ArmorItem.Type.LEGGINGS, 6);
+        p_266655_.put(ArmorItem.Type.CHESTPLATE, 6);
+        p_266655_.put(ArmorItem.Type.HELMET, 6);
+    }), 20, SoundEvents.FIRE_AMBIENT, 6.67F, 0.25F, () -> Ingredient.of(ModItems.CRYSTAL_CONTROL_SHARD.get())),
+    CONTROL_WATER("water", 30, Util.make(new EnumMap<>(ArmorItem.Type.class), (p_266655_) -> {
+        p_266655_.put(ArmorItem.Type.BOOTS, 6);
+        p_266655_.put(ArmorItem.Type.LEGGINGS, 6);
+        p_266655_.put(ArmorItem.Type.CHESTPLATE, 6);
+        p_266655_.put(ArmorItem.Type.HELMET, 6);
+    }), 20, SoundEvents.PUFFER_FISH_BLOW_UP, 6.67F, 0.25F, () -> Ingredient.of(ModItems.CRYSTAL_CONTROL_SHARD.get())),
+    CONTROL_EARTH("earth", 30, Util.make(new EnumMap<>(ArmorItem.Type.class), (p_266655_) -> {
+        p_266655_.put(ArmorItem.Type.BOOTS, 6);
+        p_266655_.put(ArmorItem.Type.LEGGINGS, 6);
+        p_266655_.put(ArmorItem.Type.CHESTPLATE, 6);
+        p_266655_.put(ArmorItem.Type.HELMET, 6);
+    }), 20, SoundEvents.STONE_PLACE, 6.67F, 0.25F, () -> Ingredient.of(ModItems.CRYSTAL_CONTROL_SHARD.get())),
+    CONTROL_AIR("air", 30, Util.make(new EnumMap<>(ArmorItem.Type.class), (p_266655_) -> {
+        p_266655_.put(ArmorItem.Type.BOOTS, 6);
+        p_266655_.put(ArmorItem.Type.LEGGINGS, 6);
+        p_266655_.put(ArmorItem.Type.CHESTPLATE, 6);
+        p_266655_.put(ArmorItem.Type.HELMET, 6);
+    }), 20, SoundEvents.BUBBLE_COLUMN_WHIRLPOOL_INSIDE, 6.67F, 0.25F, () -> Ingredient.of(ModItems.CRYSTAL_CONTROL_SHARD.get()))
     ;
 
 

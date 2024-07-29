@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:iron_ingot"
+    },
+    "L": {
+      "item": "minecraft:lead"
+    },
+    "R": {
+      "item": "twosidesmod:crystal_control_shard"
+    }
+  },
+  "pattern": [
+    " LR",
+    "BRB",
+    "BBB"
+  ],
+  "result": {
+    "item": "twosidesmod:control_horse_armor"
+  },
+  "show_notification": true
+}

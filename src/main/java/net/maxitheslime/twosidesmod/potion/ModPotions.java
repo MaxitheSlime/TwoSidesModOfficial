@@ -27,6 +27,22 @@ public class ModPotions {
             () -> new Potion(new MobEffectInstance(ModEffects.SUPER_STRENGTH.get(), 600, 0)));
     public static final RegistryObject<Potion> SUPER_STRENGTH_II_POTION = POTIONS.register("super_strength_ii",
             () -> new Potion(new MobEffectInstance(ModEffects.SUPER_STRENGTH_II.get(), 600, 0)));
+    public static final RegistryObject<Potion> FIRE_FISTS_POTION = POTIONS.register("fire_fists",
+            () -> new Potion(new MobEffectInstance(ModEffects.FIRE_FISTS.get(), 600, 0)));
+    public static final RegistryObject<Potion> FIRE_FISTS_II_POTION = POTIONS.register("fire_fists_ii",
+            () -> new Potion(new MobEffectInstance(ModEffects.FIRE_FISTS_II.get(), 600, 0)));
+    public static final RegistryObject<Potion> ROCK_TOMB_POTION = POTIONS.register("rock_tomb",
+            () -> new Potion(new MobEffectInstance(ModEffects.ROCK_TOMB.get(), 600, 0)));
+    public static final RegistryObject<Potion> ROCK_TOMB_II_POTION = POTIONS.register("rock_tomb_ii",
+            () -> new Potion(new MobEffectInstance(ModEffects.ROCK_TOMB_II.get(), 600, 0)));
+    public static final RegistryObject<Potion> CONDUIT_BLESSING_POTION = POTIONS.register("conduit_blessing",
+            () -> new Potion(new MobEffectInstance(ModEffects.CONDUIT_BLESSING.get(), 600, 0)));
+    public static final RegistryObject<Potion> CONDUIT_BLESSING_II_POTION = POTIONS.register("conduit_blessing_ii",
+            () -> new Potion(new MobEffectInstance(ModEffects.CONDUIT_BLESSING_II.get(), 600, 0)));
+    public static final RegistryObject<Potion> WINGED_FEET_POTION = POTIONS.register("winged_feet",
+            () -> new Potion(new MobEffectInstance(ModEffects.WINGED_FEET.get(), 600, 0)));
+    public static final RegistryObject<Potion> WINGED_FEET_II_POTION = POTIONS.register("winged_feet_ii",
+            () -> new Potion(new MobEffectInstance(ModEffects.WINGED_FEET_II.get(), 600, 0)));
 
     public static void register(IEventBus eventBus) {
         POTIONS.register(eventBus);

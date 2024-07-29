@@ -108,6 +108,28 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.POWER_LEGGINGS);
         simpleItem(ModItems.POWER_BOOTS);
         simpleItem(ModItems.POWER_HORSE_ARMOR);
+
+        simpleItem(ModItems.CONTROL_HELMET_TEMPLATE);
+        simpleItem(ModItems.CONTROL_CHESTPLATE_TEMPLATE);
+        simpleItem(ModItems.CONTROL_LEGGINGS_TEMPLATE);
+        simpleItem(ModItems.CONTROL_BOOTS_TEMPLATE);
+        simpleItem(ModItems.FIRE_HELMET);
+        simpleItem(ModItems.FIRE_CHESTPLATE);
+        simpleItem(ModItems.FIRE_LEGGINGS);
+        simpleItem(ModItems.FIRE_BOOTS);
+        simpleItem(ModItems.WATER_HELMET);
+        simpleItem(ModItems.WATER_CHESTPLATE);
+        simpleItem(ModItems.WATER_LEGGINGS);
+        simpleItem(ModItems.WATER_BOOTS);
+        simpleItem(ModItems.AIR_HELMET);
+        simpleItem(ModItems.AIR_CHESTPLATE);
+        simpleItem(ModItems.AIR_LEGGINGS);
+        simpleItem(ModItems.AIR_BOOTS);
+        simpleItem(ModItems.EARTH_HELMET);
+        simpleItem(ModItems.EARTH_CHESTPLATE);
+        simpleItem(ModItems.EARTH_LEGGINGS);
+        simpleItem(ModItems.EARTH_BOOTS);
+        simpleItem(ModItems.CONTROL_HORSE_ARMOR);
     }
 
     private ItemModelBuilder saplingItem(RegistryObject<Block> item) {
